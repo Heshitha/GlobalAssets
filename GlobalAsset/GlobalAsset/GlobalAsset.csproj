@@ -1,0 +1,1026 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81274F8F-5BCB-4707-823A-9F5D1DB02E05}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GlobalAsset</RootNamespace>
+    <AssemblyName>GlobalAsset</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\API\BackEndAPIController.cs" />
+    <Compile Include="Controllers\API\UserAPIController.cs" />
+    <Compile Include="Controllers\BackEndController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BackEndModels.cs" />
+    <Compile Include="Models\GlobalAssetsDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalAssetsDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\IndexVM.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\UserModels.cs" />
+    <Compile Include="Models\UtilityFunctions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\AdminLTE\css\AdminLTE.css" />
+    <Content Include="Content\AdminLTE\css\AdminLTE.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-black-light.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-black-light.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-black.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-black.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-blue-light.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-blue-light.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-blue.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-blue.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-green-light.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-green-light.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-green.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-green.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-purple-light.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-purple-light.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-purple.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-purple.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-red-light.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-red-light.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-red.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-red.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-yellow-light.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-yellow-light.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-yellow.css" />
+    <Content Include="Content\AdminLTE\css\skins\skin-yellow.min.css" />
+    <Content Include="Content\AdminLTE\css\skins\_all-skins.css" />
+    <Content Include="Content\AdminLTE\css\skins\_all-skins.min.css" />
+    <Content Include="Content\AdminLTE\img\avatar.png" />
+    <Content Include="Content\AdminLTE\img\avatar04.png" />
+    <Content Include="Content\AdminLTE\img\avatar2.png" />
+    <Content Include="Content\AdminLTE\img\avatar3.png" />
+    <Content Include="Content\AdminLTE\img\avatar5.png" />
+    <Content Include="Content\AdminLTE\img\boxed-bg.jpg" />
+    <Content Include="Content\AdminLTE\img\boxed-bg.png" />
+    <Content Include="Content\AdminLTE\img\credit\american-express.png" />
+    <Content Include="Content\AdminLTE\img\credit\cirrus.png" />
+    <Content Include="Content\AdminLTE\img\credit\mastercard.png" />
+    <Content Include="Content\AdminLTE\img\credit\mestro.png" />
+    <Content Include="Content\AdminLTE\img\credit\paypal.png" />
+    <Content Include="Content\AdminLTE\img\credit\paypal2.png" />
+    <Content Include="Content\AdminLTE\img\credit\visa.png" />
+    <Content Include="Content\AdminLTE\img\default-50x50.gif" />
+    <Content Include="Content\AdminLTE\img\icons.png" />
+    <Content Include="Content\AdminLTE\img\photo1.png" />
+    <Content Include="Content\AdminLTE\img\photo2.png" />
+    <Content Include="Content\AdminLTE\img\photo3.jpg" />
+    <Content Include="Content\AdminLTE\img\photo4.jpg" />
+    <Content Include="Content\AdminLTE\img\user1-128x128.jpg" />
+    <Content Include="Content\AdminLTE\img\user2-160x160.jpg" />
+    <Content Include="Content\AdminLTE\img\user3-128x128.jpg" />
+    <Content Include="Content\AdminLTE\img\user4-128x128.jpg" />
+    <Content Include="Content\AdminLTE\img\user5-128x128.jpg" />
+    <Content Include="Content\AdminLTE\img\user6-128x128.jpg" />
+    <Content Include="Content\AdminLTE\img\user7-128x128.jpg" />
+    <Content Include="Content\AdminLTE\img\user8-128x128.jpg" />
+    <Content Include="Content\AdminLTE\js\app.js" />
+    <Content Include="Content\AdminLTE\js\app.min.js" />
+    <Content Include="Content\AdminLTE\js\demo.js" />
+    <Content Include="Content\AdminLTE\js\pages\dashboard.js" />
+    <Content Include="Content\AdminLTE\js\pages\dashboard2.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\bootstrap-datepicker.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\datepicker3.css" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.ar.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.az.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.bg.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.ca.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.cs.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.cy.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.da.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.de.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.el.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.es.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.et.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.fa.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.fi.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.fr.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.gl.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.he.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.hr.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.hu.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.id.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.is.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.it.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.ja.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.ka.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.kk.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.kr.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.lt.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.lv.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.mk.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.ms.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.nb.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.nl-BE.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.nl.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.no.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.pl.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.pt-BR.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.pt.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.ro.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.rs-latin.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.rs.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.ru.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.sk.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.sl.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.sq.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.sv.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.sw.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.th.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.tr.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.ua.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.vi.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.zh-CN.js" />
+    <Content Include="Content\AdminLTE\plugins\datepicker\locales\bootstrap-datepicker.zh-TW.js" />
+    <Content Include="Content\AdminLTE\plugins\fastclick\fastclick.js" />
+    <Content Include="Content\AdminLTE\plugins\fastclick\fastclick.min.js" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\all.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\aero%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\aero.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\aero.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\blue%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\blue.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\blue.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\flat%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\flat.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\flat.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\green%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\green.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\green.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\grey%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\grey.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\grey.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\orange%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\orange.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\orange.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\pink%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\pink.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\pink.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\purple%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\purple.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\purple.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\red%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\red.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\red.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\yellow%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\yellow.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\yellow.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\flat\_all.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\futurico\futurico%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\futurico\futurico.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\futurico\futurico.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\icheck.js" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\icheck.min.js" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\aero.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\blue.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\green.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\grey.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\line%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\line.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\line.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\orange.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\pink.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\purple.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\red.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\yellow.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\line\_all.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\aero%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\aero.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\aero.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\blue%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\blue.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\blue.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\green%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\green.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\green.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\grey%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\grey.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\grey.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\minimal%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\minimal.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\minimal.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\orange%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\orange.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\orange.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\pink%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\pink.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\pink.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\purple%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\purple.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\purple.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\red%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\red.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\red.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\yellow%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\yellow.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\yellow.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\minimal\_all.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\polaris\polaris%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\polaris\polaris.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\polaris\polaris.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\aero%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\aero.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\aero.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\blue%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\blue.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\blue.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\green%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\green.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\green.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\grey%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\grey.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\grey.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\orange%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\orange.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\orange.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\pink%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\pink.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\pink.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\purple%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\purple.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\purple.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\red%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\red.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\red.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\square%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\square.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\square.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\yellow%402x.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\yellow.css" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\yellow.png" />
+    <Content Include="Content\AdminLTE\plugins\iCheck\square\_all.css" />
+    <Content Include="Content\AdminLTE\plugins\pace\pace.css" />
+    <Content Include="Content\AdminLTE\plugins\pace\pace.js" />
+    <Content Include="Content\AdminLTE\plugins\pace\pace.min.css" />
+    <Content Include="Content\AdminLTE\plugins\pace\pace.min.js" />
+    <Content Include="Content\AdminLTE\plugins\pagination\jquery.simplePagination.js" />
+    <Content Include="Content\AdminLTE\plugins\pagination\simplePagination.css" />
+    <Content Include="Content\AdminLTE\plugins\pagination\simplePagination.js" />
+    <Content Include="Content\AdminLTE\plugins\slimScroll\jquery.slimscroll.js" />
+    <Content Include="Content\AdminLTE\plugins\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\crypto\assets\revolution\assets\coloredbg.png" />
+    <Content Include="Content\crypto\assets\revolution\assets\gridtile.png" />
+    <Content Include="Content\crypto\assets\revolution\assets\gridtile_3x3.png" />
+    <Content Include="Content\crypto\assets\revolution\assets\gridtile_3x3_white.png" />
+    <Content Include="Content\crypto\assets\revolution\assets\gridtile_white.png" />
+    <Content Include="Content\crypto\assets\revolution\assets\loader.gif" />
+    <Content Include="Content\crypto\assets\revolution\css\closedhand.html" />
+    <Content Include="Content\crypto\assets\revolution\css\layers.css" />
+    <Content Include="Content\crypto\assets\revolution\css\navigation.css" />
+    <Content Include="Content\crypto\assets\revolution\css\openhand.html" />
+    <Content Include="Content\crypto\assets\revolution\css\settings.css" />
+    <Content Include="Content\crypto\assets\revolution\fonts\revicons\revicons90c6.svg" />
+    <Content Include="Content\crypto\assets\revolution\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="Content\crypto\assets\revolution\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="Content\crypto\assets\revolution\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="Content\crypto\assets\revolution\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="Content\crypto\assets\revolution\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="Content\crypto\assets\revolution\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="Content\crypto\assets\revolution\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="Content\crypto\assets\revolution\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="Content\crypto\assets\revolution\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="Content\crypto\assets\revolution\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="Content\crypto\assets\revolution\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Content\crypto\css\animate.min.css" />
+    <Content Include="Content\crypto\css\bootstrap-select.min.css" />
+    <Content Include="Content\crypto\css\bootstrap.min.css" />
+    <Content Include="Content\crypto\css\flaticon.css" />
+    <Content Include="Content\crypto\css\flexslider.css" />
+    <Content Include="Content\crypto\css\font-awesome.css" />
+    <Content Include="Content\crypto\css\hover.css" />
+    <Content Include="Content\crypto\css\images\bx_loader.html" />
+    <Content Include="Content\crypto\css\images\controls.html" />
+    <Content Include="Content\crypto\css\images\ui-bg_glass_55_fbf9ee_1x400.html" />
+    <Content Include="Content\crypto\css\images\ui-bg_glass_65_ffffff_1x400.html" />
+    <Content Include="Content\crypto\css\images\ui-bg_glass_75_dadada_1x400.html" />
+    <Content Include="Content\crypto\css\images\ui-bg_glass_75_e6e6e6_1x400.html" />
+    <Content Include="Content\crypto\css\images\ui-bg_glass_95_fef1ec_1x400.html" />
+    <Content Include="Content\crypto\css\images\ui-bg_highlight-soft_75_cccccc_1x100.html" />
+    <Content Include="Content\crypto\css\images\ui-icons_222222_256x240.html" />
+    <Content Include="Content\crypto\css\images\ui-icons_2e83ff_256x240.html" />
+    <Content Include="Content\crypto\css\images\ui-icons_454545_256x240.html" />
+    <Content Include="Content\crypto\css\images\ui-icons_888888_256x240.html" />
+    <Content Include="Content\crypto\css\images\ui-icons_cd0a0a_256x240.html" />
+    <Content Include="Content\crypto\css\jquery-ui.css" />
+    <Content Include="Content\crypto\css\jquery.bootstrap-touchspin.css" />
+    <Content Include="Content\crypto\css\jquery.bxslider.css" />
+    <Content Include="Content\crypto\css\jquery.fancybox.css" />
+    <Content Include="Content\crypto\css\magnific-popup.css" />
+    <Content Include="Content\crypto\css\nouislider.css" />
+    <Content Include="Content\crypto\css\nouislider.pips.css" />
+    <Content Include="Content\crypto\css\owl.carousel.css" />
+    <Content Include="Content\crypto\css\owl.video.play.html" />
+    <Content Include="Content\crypto\css\polyglot-language-switcher.css" />
+    <Content Include="Content\crypto\css\responsive.css" />
+    <Content Include="Content\crypto\css\style.css" />
+    <Content Include="Content\crypto\fonts\flaticon.css" />
+    <Content Include="Content\crypto\fonts\Flaticon.svg" />
+    <Content Include="Content\crypto\fonts\fontawesome-webfont3295.html" />
+    <Content Include="Content\crypto\fonts\fontawesome-webfont3295.svg" />
+    <Content Include="Content\crypto\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="Content\crypto\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\crypto\fonts\webfonts\flexslider-icon-2.html" />
+    <Content Include="Content\crypto\fonts\webfonts\flexslider-icon-3.html" />
+    <Content Include="Content\crypto\fonts\webfonts\flexslider-icon.html" />
+    <Content Include="Content\crypto\fonts\webfonts\flexslider-icond41d.html" />
+    <Content Include="Content\crypto\fonts\webfont\flexslider-icon.html" />
+    <Content Include="Content\crypto\images\1920.jpg" />
+    <Content Include="Content\crypto\images\about\1.png" />
+    <Content Include="Content\crypto\images\about\900.jpg" />
+    <Content Include="Content\crypto\images\arrow-down.html" />
+    <Content Include="Content\crypto\images\background\ask-bg.jpg" />
+    <Content Include="Content\crypto\images\background\bg-1.jpg" />
+    <Content Include="Content\crypto\images\background\bg-3.jpg" />
+    <Content Include="Content\crypto\images\background\desktop.png" />
+    <Content Include="Content\crypto\images\blog\b-1.jpg" />
+    <Content Include="Content\crypto\images\blog\b-2.jpg" />
+    <Content Include="Content\crypto\images\blog\b-3.jpg" />
+    <Content Include="Content\crypto\images\blog\b-4.jpg" />
+    <Content Include="Content\crypto\images\blog\b-5.jpg" />
+    <Content Include="Content\crypto\images\blog\b-6.jpg" />
+    <Content Include="Content\crypto\images\blog\b-7.jpg" />
+    <Content Include="Content\crypto\images\blog\b-8.jpg" />
+    <Content Include="Content\crypto\images\blog\b-9.jpg" />
+    <Content Include="Content\crypto\images\blog\sidebar\popular-post-1.png" />
+    <Content Include="Content\crypto\images\blog\sidebar\popular-post-2.png" />
+    <Content Include="Content\crypto\images\blog\sidebar\popular-post-3.png" />
+    <Content Include="Content\crypto\images\blog\testi-image-1.jpg" />
+    <Content Include="Content\crypto\images\blog\testi-image-2.jpg" />
+    <Content Include="Content\crypto\images\blog\testi-image-3.jpg" />
+    <Content Include="Content\crypto\images\coins\1.png" />
+    <Content Include="Content\crypto\images\coins\1182-BTC.png" />
+    <Content Include="Content\crypto\images\coins\2.png" />
+    <Content Include="Content\crypto\images\coins\3.png" />
+    <Content Include="Content\crypto\images\coins\4.png" />
+    <Content Include="Content\crypto\images\coins\5.png" />
+    <Content Include="Content\crypto\images\coins\6.png" />
+    <Content Include="Content\crypto\images\coins\7.png" />
+    <Content Include="Content\crypto\images\coins\8.png" />
+    <Content Include="Content\crypto\images\elements\arrow-big.png" />
+    <Content Include="Content\crypto\images\fancybox\blank.gif" />
+    <Content Include="Content\crypto\images\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="Content\crypto\images\fancybox\fancybox_loading.gif" />
+    <Content Include="Content\crypto\images\fancybox\fancybox_overlay.png" />
+    <Content Include="Content\crypto\images\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="Content\crypto\images\fancybox\fancybox_sprite.png" />
+    <Content Include="Content\crypto\images\favicon\apple-touch-icon.png" />
+    <Content Include="Content\crypto\images\favicon\favicon-16x16.png" />
+    <Content Include="Content\crypto\images\favicon\favicon-32x32.png" />
+    <Content Include="Content\crypto\images\footer\1.jpg" />
+    <Content Include="Content\crypto\images\footer\2.jpg" />
+    <Content Include="Content\crypto\images\footer\3.jpg" />
+    <Content Include="Content\crypto\images\footer\logo1.png" />
+    <Content Include="Content\crypto\images\icons\count-1.png" />
+    <Content Include="Content\crypto\images\icons\count-2.png" />
+    <Content Include="Content\crypto\images\icons\count-3.png" />
+    <Content Include="Content\crypto\images\icons\count-4.png" />
+    <Content Include="Content\crypto\images\icons\how-1.png" />
+    <Content Include="Content\crypto\images\icons\how-2.png" />
+    <Content Include="Content\crypto\images\icons\how-3.png" />
+    <Content Include="Content\crypto\images\icons\preloader.gif" />
+    <Content Include="Content\crypto\images\icons\service-1.png" />
+    <Content Include="Content\crypto\images\icons\service-2.png" />
+    <Content Include="Content\crypto\images\icons\service-3.png" />
+    <Content Include="Content\crypto\images\icons\service-4.png" />
+    <Content Include="Content\crypto\images\icons\service-5.png" />
+    <Content Include="Content\crypto\images\icons\service-6.png" />
+    <Content Include="Content\crypto\images\logo\logo.png" />
+    <Content Include="Content\crypto\images\logo\map-marker.png" />
+    <Content Include="Content\crypto\images\news\1.jpg" />
+    <Content Include="Content\crypto\images\news\2.jpg" />
+    <Content Include="Content\crypto\images\news\3.jpg" />
+    <Content Include="Content\crypto\images\resources\490.png" />
+    <Content Include="Content\crypto\images\resources\banner.jpg" />
+    <Content Include="Content\crypto\images\resources\bs.png" />
+    <Content Include="Content\crypto\images\resources\call.jpg" />
+    <Content Include="Content\crypto\images\resources\error1.png" />
+    <Content Include="Content\crypto\images\resources\getquote-bg-img.jpg" />
+    <Content Include="Content\crypto\images\resources\man-with-tab.png" />
+    <Content Include="Content\crypto\images\resources\service-1.png" />
+    <Content Include="Content\crypto\images\services\1.png" />
+    <Content Include="Content\crypto\images\services\2.png" />
+    <Content Include="Content\crypto\images\services\3.png" />
+    <Content Include="Content\crypto\images\services\4.png" />
+    <Content Include="Content\crypto\images\services\5.png" />
+    <Content Include="Content\crypto\images\services\6.png" />
+    <Content Include="Content\crypto\images\services\bitcoin.jpg" />
+    <Content Include="Content\crypto\images\services\q1.jpg" />
+    <Content Include="Content\crypto\images\services\service-1.png" />
+    <Content Include="Content\crypto\images\services\service-2.png" />
+    <Content Include="Content\crypto\images\services\service-3.png" />
+    <Content Include="Content\crypto\images\services\service-4.png" />
+    <Content Include="Content\crypto\images\services\service-5.png" />
+    <Content Include="Content\crypto\images\services\service-6.png" />
+    <Content Include="Content\crypto\images\shop\1.png" />
+    <Content Include="Content\crypto\images\shop\2.png" />
+    <Content Include="Content\crypto\images\shop\3.png" />
+    <Content Include="Content\crypto\images\shop\4.png" />
+    <Content Include="Content\crypto\images\shop\5.png" />
+    <Content Include="Content\crypto\images\shop\6.png" />
+    <Content Include="Content\crypto\images\slider\1.jpg" />
+    <Content Include="Content\crypto\images\slider\2.jpg" />
+    <Content Include="Content\crypto\images\slider\3.jpg" />
+    <Content Include="Content\crypto\images\team\team-1.jpg" />
+    <Content Include="Content\crypto\images\team\team-2.jpg" />
+    <Content Include="Content\crypto\images\team\team-3.jpg" />
+    <Content Include="Content\crypto\images\team\team-4.jpg" />
+    <Content Include="Content\crypto\images\team\team-5.jpg" />
+    <Content Include="Content\crypto\images\team\team-6.jpg" />
+    <Content Include="Content\crypto\images\team\team-7.jpg" />
+    <Content Include="Content\crypto\images\team\team-8.jpg" />
+    <Content Include="Content\crypto\js\bootstrap-select.min.js" />
+    <Content Include="Content\crypto\js\bootstrap.min.js" />
+    <Content Include="Content\crypto\js\custom.js" />
+    <Content Include="Content\crypto\js\default-map.js" />
+    <Content Include="Content\crypto\js\gmap.js" />
+    <Content Include="Content\crypto\js\imagezoom.js" />
+    <Content Include="Content\crypto\js\isotope.js" />
+    <Content Include="Content\crypto\js\jquery-ui.js" />
+    <Content Include="Content\crypto\js\jquery.appear.js" />
+    <Content Include="Content\crypto\js\jquery.bootstrap-touchspin.js" />
+    <Content Include="Content\crypto\js\jquery.countTo.js" />
+    <Content Include="Content\crypto\js\jquery.fancybox.pack.js" />
+    <Content Include="Content\crypto\js\jquery.fitvids.js" />
+    <Content Include="Content\crypto\js\jquery.flexslider.js" />
+    <Content Include="Content\crypto\js\jquery.js" />
+    <Content Include="Content\crypto\js\jquery.magnific-popup.min.js" />
+    <Content Include="Content\crypto\js\jquery.mixitup.min.js" />
+    <Content Include="Content\crypto\js\jquery.polyglot.language.switcher.js" />
+    <Content Include="Content\crypto\js\jquery.validate.min.js" />
+    <Content Include="Content\crypto\js\menuzord.js" />
+    <Content Include="Content\crypto\js\nouislider.js" />
+    <Content Include="Content\crypto\js\owl.carousel.min.js" />
+    <Content Include="Content\crypto\js\SmoothScroll.js" />
+    <Content Include="Content\crypto\js\validation.js" />
+    <Content Include="Content\crypto\js\wow.js" />
+    <Content Include="Content\css\animate.min.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\ionicons.min.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\owl.carousel.css" />
+    <Content Include="Content\css\owl.transitions.css" />
+    <Content Include="Content\css\prettyPhoto.css" />
+    <Content Include="Content\css\responsive.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\ionicons.svg" />
+    <Content Include="Content\images\animated-number\bg.jpg" />
+    <Content Include="Content\images\BitCoin.jpg" />
+    <Content Include="Content\images\blog\01.jpg" />
+    <Content Include="Content\images\blog\02.jpg" />
+    <Content Include="Content\images\blog\03.jpg" />
+    <Content Include="Content\images\cars_0002.jpg" />
+    <Content Include="Content\images\cars_0005.jpg" />
+    <Content Include="Content\images\cars_0010.jpg" />
+    <Content Include="Content\images\cta2\cta2-bg.jpg" />
+    <Content Include="Content\images\cta2\cta2-img.png" />
+    <Content Include="Content\images\dubai.jpg" />
+    <Content Include="Content\images\field-summer-sun-meadow 2.jpg" />
+    <Content Include="Content\images\green.jpg" />
+    <Content Include="Content\images\ico\apple-touch-icon-114-precomposed.png" />
+    <Content Include="Content\images\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="Content\images\ico\apple-touch-icon-57-precomposed.png" />
+    <Content Include="Content\images\ico\apple-touch-icon-72-precomposed.png" />
+    <Content Include="Content\images\ico\favicon.ico" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\main-feature.png" />
+    <Content Include="Content\images\mapbg.png" />
+    <Content Include="Content\images\portfolio\01.jpg" />
+    <Content Include="Content\images\portfolio\02.jpg" />
+    <Content Include="Content\images\portfolio\03.jpg" />
+    <Content Include="Content\images\portfolio\04.jpg" />
+    <Content Include="Content\images\portfolio\05.jpg" />
+    <Content Include="Content\images\portfolio\06.jpg" />
+    <Content Include="Content\images\portfolio\07.jpg" />
+    <Content Include="Content\images\portfolio\08.jpg" />
+    <Content Include="Content\images\portfolio\full.jpg" />
+    <Content Include="Content\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="Content\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="Content\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="Content\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="Content\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="Content\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="Content\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="Content\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="Content\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="Content\images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="Content\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="Content\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="Content\images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="Content\images\prettyPhoto\default\loader.gif" />
+    <Content Include="Content\images\prettyPhoto\default\sprite.png" />
+    <Content Include="Content\images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="Content\images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="Content\images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="Content\images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="Content\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="Content\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="Content\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="Content\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="Content\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="Content\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="Content\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="Content\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="Content\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="Content\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="Content\images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="Content\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="Content\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="Content\images\red.jpg" />
+    <Content Include="Content\images\site-background.jpg" />
+    <Content Include="Content\images\slider\bg1.jpg" />
+    <Content Include="Content\images\slider\bg2.jpg" />
+    <Content Include="Content\images\slider\bg3.jpg" />
+    <Content Include="Content\images\team\01.jpg" />
+    <Content Include="Content\images\team\02.jpg" />
+    <Content Include="Content\images\team\03.jpg" />
+    <Content Include="Content\images\team\04.jpg" />
+    <Content Include="Content\images\testimonial\01.jpg" />
+    <Content Include="Content\images\testimonial\bg.jpg" />
+    <Content Include="Content\images\work-process\bg.jpg" />
+    <Content Include="Content\PrintStyle.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\angular-animate.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\angular\app.js" />
+    <Content Include="Scripts\angular\Controllers\BuyPackageController.js" />
+    <Content Include="Scripts\angular\Controllers\ClassController.js" />
+    <Content Include="Scripts\angular\Controllers\FinancialController.js" />
+    <Content Include="Scripts\angular\Controllers\InviteFriendsController.js" />
+    <Content Include="Scripts\angular\Controllers\LandingPageController.js" />
+    <Content Include="Scripts\angular\Controllers\TeamController.js" />
+    <Content Include="Scripts\angular\Controllers\TransactionController.js" />
+    <Content Include="Scripts\angular\Controllers\UserController.js" />
+    <Content Include="Scripts\angular\Controllers\ViewWithdrawalController.js" />
+    <Content Include="Scripts\angular\Controllers\WithdrawalController.js" />
+    <Content Include="Scripts\angular\Factories\GetFactory.js" />
+    <Content Include="Scripts\angular\Factories\PostFactory.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\css\main.less" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\fonts\ionicons.eot" />
+    <Content Include="Content\fonts\ionicons.ttf" />
+    <Content Include="Content\fonts\ionicons.woff" />
+    <Content Include="Content\images\ico\Thumbs.db" />
+    <Content Include="Content\images\slider\Thumbs.db" />
+    <Content Include="Content\images\testimonial\Thumbs.db" />
+    <Content Include="Content\images\Thumbs.db" />
+    <Content Include="Content\crypto\assets\revolution\fonts\revicons\revicons90c6.eot" />
+    <Content Include="Content\crypto\assets\revolution\fonts\revicons\revicons90c6.ttf" />
+    <Content Include="Content\crypto\assets\revolution\fonts\revicons\revicons90c6.woff" />
+    <Content Include="Content\crypto\fonts\Flaticon.eot" />
+    <Content Include="Content\crypto\fonts\Flaticon.ttf" />
+    <Content Include="Content\crypto\fonts\Flaticon.woff" />
+    <Content Include="Content\crypto\fonts\Flaticond41d.eot" />
+    <Content Include="Content\crypto\fonts\fontawesome-webfont3295.eot" />
+    <Content Include="Content\crypto\fonts\fontawesome-webfont3295.ttf" />
+    <Content Include="Content\crypto\fonts\fontawesome-webfont3295.woff" />
+    <Content Include="Content\crypto\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Content\crypto\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\crypto\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\crypto\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\crypto\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="Models\GlobalAssetsDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>GlobalAssetsDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\Web.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\html5shiv.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\jquery.inview.min.js" />
+    <Content Include="Scripts\jquery.isotope.min.js" />
+    <Content Include="Scripts\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\mousescroll.js" />
+    <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\smoothscroll.js" />
+    <Content Include="Scripts\UtilityMethods.js" />
+    <Content Include="Scripts\wow.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Uploads\BankProofs\0fc8ea42-a5cc-4907-b61f-d7c423bbd83e.jpg" />
+    <Content Include="Uploads\BankProofs\1.jpg" />
+    <Content Include="Uploads\BankProofs\279fa2c6-4b1c-4562-a027-e89b770d5a72.PNG" />
+    <Content Include="Uploads\BankProofs\6297d096-19af-4fa3-befb-317d9cc13c32.jpg" />
+    <Content Include="Uploads\BankProofs\69c8fb2b-f32d-46b6-9846-7a3484a27b12.jpg" />
+    <Content Include="Uploads\BankProofs\7126962d-fcb0-4146-a5b6-788dcbfc6b18.jpg" />
+    <Content Include="Uploads\BankProofs\780f7638-816a-42f4-a5b3-df7a5cad876c.jpg" />
+    <Content Include="Uploads\BankProofs\a4794ff6-759e-4830-89f4-7dc5470fea96.jpg" />
+    <Content Include="Uploads\ProfileImages\1.jpg" />
+    <Content Include="Uploads\ProfileImages\1.png" />
+    <Content Include="Uploads\ProfileImages\10.jpg" />
+    <Content Include="Uploads\ProfileImages\11.jpg" />
+    <Content Include="Uploads\ProfileImages\12.jpg" />
+    <Content Include="Uploads\ProfileImages\13.jpg" />
+    <Content Include="Uploads\ProfileImages\17.jpg" />
+    <Content Include="Uploads\ProfileImages\18.jpg" />
+    <Content Include="Uploads\ProfileImages\19.jpg" />
+    <Content Include="Uploads\ProfileImages\2.jpg" />
+    <Content Include="Uploads\ProfileImages\2.png" />
+    <Content Include="Uploads\ProfileImages\20.jpg" />
+    <Content Include="Uploads\ProfileImages\21.jpg" />
+    <Content Include="Uploads\ProfileImages\22.jpg" />
+    <Content Include="Uploads\ProfileImages\23.jpg" />
+    <Content Include="Uploads\ProfileImages\24.jpg" />
+    <Content Include="Uploads\ProfileImages\25.jpg" />
+    <Content Include="Uploads\ProfileImages\26.jpg" />
+    <Content Include="Uploads\ProfileImages\27.jpg" />
+    <Content Include="Uploads\ProfileImages\28.jpg" />
+    <Content Include="Uploads\ProfileImages\29.jpg" />
+    <Content Include="Uploads\ProfileImages\3.jpg" />
+    <Content Include="Uploads\ProfileImages\30.jpg" />
+    <Content Include="Uploads\ProfileImages\31.jpg" />
+    <Content Include="Uploads\ProfileImages\4.jpg" />
+    <Content Include="Uploads\ProfileImages\5.jpg" />
+    <Content Include="Uploads\ProfileImages\6.jpg" />
+    <Content Include="Uploads\ProfileImages\7.jpg" />
+    <Content Include="Uploads\ProfileImages\8.jpg" />
+    <Content Include="Uploads\ProfileImages\9.jpg" />
+    <Content Include="Uploads\ProfileImages\default-user.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Uploads\ProfileImages\Thumbs.db" />
+    <Content Include="Views\Shared\_AdminLTELayout.cshtml" />
+    <Content Include="Views\BackEnd\Index.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\SignUp.cshtml" />
+    <Content Include="Views\User\MyProfile.cshtml" />
+    <Content Include="Views\BackEnd\Dashboard.cshtml" />
+    <Content Include="Views\BackEnd\Deposits.cshtml" />
+    <Content Include="Views\BackEnd\DepositsHistory.cshtml" />
+    <Content Include="Views\BackEnd\Withdraw.cshtml" />
+    <Content Include="Views\BackEnd\WithdrawalHistory.cshtml" />
+    <Content Include="Views\BackEnd\BuyPackage.cshtml" />
+    <Content Include="Views\BackEnd\InviteFriends.cshtml" />
+    <Content Include="Views\User\VerificationEmailSent.cshtml" />
+    <Content Include="Views\User\VerifyEmail.cshtml" />
+    <Content Include="Views\BackEnd\ViewDeposit.cshtml" />
+    <Content Include="Views\BackEnd\AdminPendingWithdrawals.cshtml" />
+    <Content Include="Views\BackEnd\AdminPendingDeposits.cshtml" />
+    <Content Include="Views\BackEnd\AdminProcessingDeposits.cshtml" />
+    <Content Include="Views\BackEnd\AdminCompletedDeposits.cshtml" />
+    <Content Include="Views\BackEnd\Payouts.cshtml" />
+    <Content Include="Views\BackEnd\ViewWithdrawal.cshtml" />
+    <Content Include="Views\BackEnd\AdminApprovedWithdrawals.cshtml" />
+    <Content Include="Views\BackEnd\DeclinedWithdrawals.cshtml" />
+    <Content Include="Views\BackEnd\MyFriendCircle.cshtml" />
+    <Content Include="Views\BackEnd\AdminDeclinedDeposits.cshtml" />
+    <Content Include="Views\User\ResetPassword.cshtml" />
+    <Content Include="Views\User\TestPage.cshtml" />
+    <Content Include="Views\User\ResetPasswordViaEmail.cshtml" />
+    <Content Include="Views\User\ResetPasswordEmailSent.cshtml" />
+    <Content Include="Views\User\CancelPasswordResetRequest.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\images\HomePage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\GlobalAssetsDB.dbml.layout">
+      <DependentUpon>GlobalAssetsDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56209</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56209/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

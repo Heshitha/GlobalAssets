@@ -1,0 +1,59 @@
+﻿@model GlobalAsset.Models.PayoutViewModel
+@{
+    Layout = null;
+}
+
+<section class="content">
+    <h2>Payout History</h2>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="box box-warning">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Total Earnings : $@(Model.TotalEarning.ToString("0.00"))</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                    @if (Model.PayoutList.Count > 0)
+                    {
+                        <table class="table table-bordered table-striped" id="tblAddedItems">
+                            <tr>
+                                <th style="width: 10%">Payout#</th>
+                                <th>Payout Date</th>
+                                <th>Amount</th>
+                                <th>Description</th>
+                            </tr>
+                            @foreach(var item in Model.PayoutList)
+                            {
+                                <tr>
+                                    <td style="width: 10%">@(item.PayoutID)</td>
+                                    <td>@(item.PayoutDate)</td>
+                                    <td>$@(item.Amount.ToString("0.00"))</td>
+                                    <td>@(item.Description)</td>
+                                </tr>
+                            }
+
+                        </table>
+                    }
+                    else
+                    {
+                        <div class="row">
+                            <div class="col-md-5">
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <i class="ion ion-stats-bars text-gray" style="font-size:110px"></i>
+                            </div>
+                            <div class="col-md-5">
+                            </div>
+                            <div class="clearfix"></div>
+                            <h4 class="text-gray text-center">Oops! Looks like you haven't received any payouts yet.</h4>
+                        </div>
+                    }
+
+                </div><!-- /.box-body -->
+                <div class="box-footer">
+
+                </div><!-- box-footer -->
+            </div><!-- /.box -->
+        </div>
+    </div>
+</section>

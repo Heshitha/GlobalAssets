@@ -1,0 +1,108 @@
+﻿
+@{
+    Layout = null;
+}
+
+<section class="content">
+    <h2>View Withdrawal</h2>
+    <input type="hidden" value="@(ViewBag.withid)" id="hdnwithid" />
+    <input type="hidden" value="@(ViewBag.AdminID)" id="hdnadmid" />
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="box box-warning">
+                <form>
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Withdrawal Details</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div ng-if="isadmin">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="txtName">Name</label>
+                                        <input type="text" class="form-control" required ng-model="name" disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtName">Username</label>
+                                        <input type="text" class="form-control" required ng-model="username" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <img id="imgPreview" class="profile-user-img img-responsive profile-user-img-profilePage" src="~/Uploads/ProfileImages/{{userID}}{{profileImage}}?@(DateTime.Now.Ticks.ToString())" alt="Uploaded Image" hidden onerror="this.onerror = null; this.src = baseUrl + '/Uploads/ProfileImages/default-user.jpg'" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="txtName">Withdrawal ID</label>
+                                    <input type="text" class="form-control" required ng-model="withid" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtName">Requested Date</label>
+                                    <input type="text" class="form-control" required ng-model="requesteddate" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtName">Amount</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
+                                        <input type="text" class="form-control" required ng-model="amount" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtName">Transaction Amount Without 5% Surcharge</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
+                                        <input type="text" class="form-control" required ng-model="amountwithoutsurcharge" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtName">Payment Type</label>
+                                    <input type="text" class="form-control" required ng-model="paymenttype" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtName">Payment Email</label>
+                                    <input type="text" class="form-control" required ng-model="paymentemail" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtName">Status</label>
+                                    <input type="text" class="form-control" required ng-model="status" disabled>
+                                </div>
+                                <div class="form-group" ng-show="status != 'Declined'">
+                                    <label for="txtName">Transaction ID</label>
+                                    <input type="text" class="form-control" required ng-model="transactionid" ng-disabled="!isadmin || status != 'Pending'">
+                                </div>
+                                <div class="form-group" ng-show="status != 'Declined'">
+                                    <label for="txtName">Sender's Email</label>
+                                    <input type="text" class="form-control" required ng-model="sendersemail" ng-disabled="!isadmin || status != 'Pending'">
+                                </div>
+                                <div class="form-group" ng-show="status != 'Pending'">
+                                    <label for="txtName">Processed Date</label>
+                                    <input type="text" class="form-control" required ng-model="processeddate" ng-disabled="!isadmin || status != 'Pending'">
+                                </div>
+                                <div class="form-group" ng-show="status != 'Approved'">
+                                    <label for="txtName">Reason For Decline</label>
+                                    <input type="text" class="form-control" required ng-model="declinereason" ng-disabled="!isadmin || status != 'Pending'">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer" ng-if="isadmin && status == 'Pending'">
+                        <button type="button" class="btn btn-warning" ng-click="approveWithdraw()">
+                            <i class="fa fa-floppy-o"></i>
+                            &nbsp;Approve Withdrawal
+                        </button>
+                        <button type="button" class="btn btn-danger" ng-click="declineWithdraw()">
+                            <i class="fa fa-floppy-o"></i>
+                            &nbsp;Decline Withdrawal
+                        </button>
+                    </div><!-- box-footer -->
+                </form>
+                <div class="overlay" ng-if="showLoading">
+                    <i class="fa fa-refresh fa-spin"></i>
+                </div>
+            </div><!-- /.box -->
+        </div>
+        
+    </div>
+</section>

@@ -1,0 +1,19 @@
+﻿/*@media print{*/
+    body {
+        position:relative;
+    }
+    .wrapper{
+        position:relative;
+        margin:0 auto;
+        width:200mm;
+        height:287mm;
+    }
+    hr{
+        margin:0;
+    }
+    #quotationTitle, .tableTitles{
+        background:#bababa !important;
+    }
+/*}*/
+
+

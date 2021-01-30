@@ -1,0 +1,149 @@
+body {
+    /*padding-top: 50px;*/
+    /*padding-bottom: 20px;*/
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.hidden-xs{
+    display:inline !important;
+}
+
+.fixed .content-wrapper{
+    /*padding-top:0;*/
+}
+
+.content{
+    padding: 10px 25px;
+}
+
+.modal-footer{
+    margin-top:0 !important;
+}
+
+.profile-user-img-profilePage{
+    height:154px;
+    width:auto;
+}
+
+.content-wrapper, .login-page, .register-page {
+    background: rgb(5,0,93);
+    background: linear-gradient(41deg, rgba(5,0,93,1) 0%, rgba(9,9,121,1) 50%, rgba(0,160,193,1) 100%);
+}
+
+.content h2{
+    color: #ffffff !important;
+}
+
+.description-block>.description-header{
+    font-size:30px;
+}
+
+.widget-user .widget-user-username{
+    font-size:35px;
+}
+
+.ng-enter{
+    /*animation: slideInRight 0.5s both ease-in;
+    z-index: 8888;*/
+}
+.ng-leave{
+    /*animation: slideOutLeft 0.5s both ease-in;
+    z-index: 9999;*/
+}
+.register-box1{
+    width: 720px !important;
+}
+
+.widget-user{
+    box-shadow:#000 3px 3px 8px
+}
+
+@media (min-width: 992px) {
+    
+}
+
+.level4User {
+        width: 14.25% !important;
+    }
+
+.chat .item img{
+    margin-bottom: 5px;
+}
+
+/* ANIMATIONS
+============================================================================= */
+
+/* leaving animations ----------------------------------------- */
+/* rotate and fall */
+@keyframes rotateFall {
+    0%      { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%    { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+    to      { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+    from    { transform:translateY(100%); }
+    to      { transform: translateY(0); }
+}

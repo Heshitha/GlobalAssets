@@ -1,0 +1,2317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Nuwan\GlobalAsset\GlobalAsset\GlobalAsset\bin\Release\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>01/18/2018 12:37:47</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>01/18/2018 12:37:47</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/GlobalAsset.dll">
+      <publishTime>01/29/2021 20:13:15</publishTime>
+    </File>
+    <File Include="bin/GlobalAsset.pdb">
+      <publishTime>01/29/2021 20:13:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>11/30/2016 16:07:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>12/07/2016 11:45:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>12/06/2016 15:15:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>12/07/2016 11:49:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>12/06/2016 15:09:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/13/2015 13:16:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/13/2015 13:16:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/13/2015 13:16:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>02/13/2015 13:16:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/13/2015 13:16:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>02/13/2015 13:16:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/23/2012 15:23:58</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/27/2012 13:00:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 04:03:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>09/10/2013 17:28:38</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/AdminLTE.css">
+      <publishTime>01/29/2018 17:29:31</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/AdminLTE.min.css">
+      <publishTime>01/29/2018 17:29:31</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-black-light.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-black-light.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-black.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-black.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-blue-light.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-blue-light.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-blue.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-blue.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-green-light.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-green-light.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-green.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-green.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-purple-light.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-purple-light.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-purple.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-purple.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-red-light.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-red-light.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-red.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-red.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-yellow-light.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-yellow-light.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-yellow.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/skin-yellow.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/_all-skins.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/css/skins/_all-skins.min.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/avatar.png">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/avatar04.png">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/avatar2.png">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/avatar3.png">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/avatar5.png">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/boxed-bg.jpg">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/boxed-bg.png">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/credit/american-express.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/credit/cirrus.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/credit/mastercard.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/credit/mestro.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/credit/paypal.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/credit/paypal2.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/credit/visa.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/default-50x50.gif">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/icons.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/photo1.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/photo2.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/photo3.jpg">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/photo4.jpg">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/user1-128x128.jpg">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/user2-160x160.jpg">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/user3-128x128.jpg">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/user4-128x128.jpg">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/user5-128x128.jpg">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/user6-128x128.jpg">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/user7-128x128.jpg">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/img/user8-128x128.jpg">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/js/app.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/js/app.min.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/js/demo.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/js/pages/dashboard.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/js/pages/dashboard2.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/bootstrap-datepicker.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/datepicker3.css">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ar.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.az.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.bg.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ca.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.cs.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.cy.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.da.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.de.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.el.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.es.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.et.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.fa.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.fi.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.fr.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.gl.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.he.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.hr.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.hu.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.id.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.is.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.it.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ja.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ka.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.kk.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.kr.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.lt.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.lv.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.mk.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ms.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.nb.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.nl-BE.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.nl.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.no.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.pl.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.pt-BR.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.pt.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ro.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.rs-latin.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.rs.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ru.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.sk.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.sl.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.sq.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.sv.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.sw.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.th.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.tr.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ua.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.vi.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.zh-TW.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/fastclick/fastclick.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/fastclick/fastclick.min.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/all.css">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/aero%402x.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/aero.css">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/aero.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/blue%402x.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/blue.css">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/blue.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/flat%402x.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/flat.css">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/flat.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/green%402x.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/green.css">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/green.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/grey%402x.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/grey.css">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/grey.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/orange%402x.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/orange.css">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/orange.png">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/pink%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/pink.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/pink.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/purple%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/purple.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/purple.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/red%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/red.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/red.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/yellow%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/yellow.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/yellow.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/flat/_all.css">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/futurico/futurico%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/futurico/futurico.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/futurico/futurico.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/icheck.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/icheck.min.js">
+      <publishTime>07/11/2017 13:20:59</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/aero.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/blue.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/green.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/grey.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/line%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/line.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/line.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/orange.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/pink.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/purple.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/red.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/yellow.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/line/_all.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/aero%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/aero.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/aero.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/blue%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/blue.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/blue.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/green%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/green.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/green.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/grey%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/grey.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/grey.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/minimal%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/minimal.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/minimal.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/orange%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/orange.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/orange.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/pink%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/pink.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/pink.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/purple%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/purple.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/purple.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/red%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/red.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/red.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/yellow%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/yellow.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/yellow.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/minimal/_all.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/polaris/polaris%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/polaris/polaris.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/polaris/polaris.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/aero%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/aero.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/aero.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/blue%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/blue.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/blue.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/green%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/green.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/green.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/grey%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/grey.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/grey.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/orange%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/orange.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/orange.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/pink%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/pink.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/pink.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/purple%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/purple.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/purple.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/red%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/red.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/red.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/square%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/square.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/square.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/yellow%402x.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/yellow.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/yellow.png">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/iCheck/square/_all.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/pace/pace.css">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/pace/pace.js">
+      <publishTime>07/11/2017 13:21:00</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/pace/pace.min.css">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/pace/pace.min.js">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/pagination/jquery.simplePagination.js">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/pagination/simplePagination.css">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/pagination/simplePagination.js">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/slimScroll/jquery.slimscroll.js">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>01/29/2018 17:29:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>01/29/2018 17:29:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>01/29/2018 17:29:32</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/assets/coloredbg.png">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/assets/gridtile.png">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/assets/gridtile_3x3.png">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/assets/gridtile_3x3_white.png">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/assets/gridtile_white.png">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/assets/loader.gif">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/css/closedhand.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/css/layers.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/css/navigation.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/css/openhand.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/css/settings.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/fonts/revicons/revicons90c6.eot">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/fonts/revicons/revicons90c6.svg">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/fonts/revicons/revicons90c6.ttf">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/fonts/revicons/revicons90c6.woff">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/js/extensions/revolution.extension.actions.min.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/js/extensions/revolution.extension.carousel.min.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/js/extensions/revolution.extension.kenburn.min.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/js/extensions/revolution.extension.migration.min.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/js/extensions/revolution.extension.navigation.min.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/js/extensions/revolution.extension.parallax.min.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/js/extensions/revolution.extension.slideanims.min.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/js/extensions/revolution.extension.video.min.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/js/jquery.themepunch.revolution.min.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/assets/revolution/js/jquery.themepunch.tools.min.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/animate.min.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/bootstrap-select.min.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/bootstrap.min.css">
+      <publishTime>01/29/2018 17:29:33</publishTime>
+    </File>
+    <File Include="Content/crypto/css/flaticon.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/flexslider.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/font-awesome.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/hover.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/bx_loader.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/controls.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/ui-bg_glass_55_fbf9ee_1x400.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/ui-bg_glass_65_ffffff_1x400.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/ui-bg_glass_75_dadada_1x400.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/ui-bg_glass_75_e6e6e6_1x400.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/ui-bg_glass_95_fef1ec_1x400.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/ui-bg_highlight-soft_75_cccccc_1x100.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/ui-icons_222222_256x240.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/ui-icons_2e83ff_256x240.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/ui-icons_454545_256x240.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/ui-icons_888888_256x240.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/images/ui-icons_cd0a0a_256x240.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/jquery-ui.css">
+      <publishTime>01/29/2018 17:29:33</publishTime>
+    </File>
+    <File Include="Content/crypto/css/jquery.bootstrap-touchspin.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/jquery.bxslider.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/jquery.fancybox.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/magnific-popup.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/nouislider.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/nouislider.pips.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/owl.carousel.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/owl.video.play.html">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/polyglot-language-switcher.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/responsive.css">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/css/style.css">
+      <publishTime>09/24/2020 00:47:36</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/flaticon.css">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/Flaticon.eot">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/Flaticon.svg">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/Flaticon.ttf">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/Flaticon.woff">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/Flaticond41d.eot">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/fontawesome-webfont3295.eot">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/fontawesome-webfont3295.html">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/fontawesome-webfont3295.svg">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/fontawesome-webfont3295.ttf">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/fontawesome-webfont3295.woff">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/fontawesome-webfontd41d.eot">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/glyphicons-halflings-regular.html">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/glyphicons-halflings-regulard41d.eot">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/webfont/flexslider-icon.html">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/webfonts/flexslider-icon-2.html">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/webfonts/flexslider-icon-3.html">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/webfonts/flexslider-icon.html">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/fonts/webfonts/flexslider-icond41d.html">
+      <publishTime>01/27/2018 18:50:53</publishTime>
+    </File>
+    <File Include="Content/crypto/images/1920.jpg">
+      <publishTime>02/23/2018 02:32:32</publishTime>
+    </File>
+    <File Include="Content/crypto/images/about/1.png">
+      <publishTime>02/07/2018 10:25:18</publishTime>
+    </File>
+    <File Include="Content/crypto/images/about/900.jpg">
+      <publishTime>02/23/2018 02:32:32</publishTime>
+    </File>
+    <File Include="Content/crypto/images/arrow-down.html">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/background/ask-bg.jpg">
+      <publishTime>02/07/2018 10:25:41</publishTime>
+    </File>
+    <File Include="Content/crypto/images/background/bg-1.jpg">
+      <publishTime>02/07/2018 10:26:55</publishTime>
+    </File>
+    <File Include="Content/crypto/images/background/bg-3.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/background/desktop.png">
+      <publishTime>02/07/2018 10:24:45</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/b-1.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/b-2.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/b-3.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/b-4.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/b-5.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/b-6.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/b-7.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/b-8.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/b-9.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/sidebar/popular-post-1.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/sidebar/popular-post-2.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/sidebar/popular-post-3.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/testi-image-1.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/testi-image-2.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/blog/testi-image-3.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/coins/1.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/coins/1182-BTC.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/coins/2.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/coins/3.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/coins/4.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/coins/5.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/coins/6.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/coins/7.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/coins/8.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/elements/arrow-big.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/fancybox/blank.gif">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/fancybox/fancybox_loading%402x.gif">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/fancybox/fancybox_loading.gif">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/fancybox/fancybox_overlay.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/fancybox/fancybox_sprite%402x.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/fancybox/fancybox_sprite.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/favicon/apple-touch-icon.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/favicon/favicon-16x16.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/favicon/favicon-32x32.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/footer/1.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/footer/2.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/footer/3.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/footer/logo1.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/count-1.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/count-2.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/count-3.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/count-4.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/how-1.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/how-2.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/how-3.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/preloader.gif">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/service-1.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/service-2.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/service-3.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/service-4.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/service-5.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/icons/service-6.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/logo/logo.png">
+      <publishTime>09/22/2020 13:24:10</publishTime>
+    </File>
+    <File Include="Content/crypto/images/logo/map-marker.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/news/1.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/news/2.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/news/3.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/resources/490.png">
+      <publishTime>02/23/2018 02:32:32</publishTime>
+    </File>
+    <File Include="Content/crypto/images/resources/banner.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/resources/bs.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/resources/call.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/resources/error1.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/resources/getquote-bg-img.jpg">
+      <publishTime>02/07/2018 10:26:17</publishTime>
+    </File>
+    <File Include="Content/crypto/images/resources/man-with-tab.png">
+      <publishTime>02/07/2018 10:25:59</publishTime>
+    </File>
+    <File Include="Content/crypto/images/resources/service-1.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/1.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/2.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/3.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/4.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/5.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/6.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/bitcoin.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/q1.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/service-1.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/service-2.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/service-3.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/service-4.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/service-5.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/services/service-6.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/shop/1.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/shop/2.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/shop/3.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/shop/4.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/shop/5.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/shop/6.png">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/slider/1.jpg">
+      <publishTime>02/23/2018 02:32:32</publishTime>
+    </File>
+    <File Include="Content/crypto/images/slider/2.jpg">
+      <publishTime>02/23/2018 02:32:32</publishTime>
+    </File>
+    <File Include="Content/crypto/images/slider/3.jpg">
+      <publishTime>02/23/2018 02:32:32</publishTime>
+    </File>
+    <File Include="Content/crypto/images/team/team-1.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/team/team-2.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/team/team-3.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/team/team-4.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/team/team-5.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/team/team-6.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/team/team-7.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/images/team/team-8.jpg">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/bootstrap-select.min.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/bootstrap.min.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/custom.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/default-map.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/gmap.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/imagezoom.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/isotope.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/jquery-ui.js">
+      <publishTime>01/29/2018 17:29:34</publishTime>
+    </File>
+    <File Include="Content/crypto/js/jquery.appear.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/jquery.bootstrap-touchspin.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/jquery.countTo.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/jquery.fancybox.pack.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/jquery.fitvids.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/jquery.flexslider.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/jquery.js">
+      <publishTime>01/29/2018 17:29:35</publishTime>
+    </File>
+    <File Include="Content/crypto/js/jquery.magnific-popup.min.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/jquery.mixitup.min.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/jquery.polyglot.language.switcher.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/jquery.validate.min.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/menuzord.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/nouislider.js">
+      <publishTime>01/27/2018 18:50:54</publishTime>
+    </File>
+    <File Include="Content/crypto/js/owl.carousel.min.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/js/SmoothScroll.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/js/validation.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/crypto/js/wow.js">
+      <publishTime>01/27/2018 18:50:55</publishTime>
+    </File>
+    <File Include="Content/css/animate.min.css">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/css/font-awesome.min.css">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/css/ionicons.min.css">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/css/main.css">
+      <publishTime>01/29/2018 17:29:35</publishTime>
+    </File>
+    <File Include="Content/css/main.less">
+      <publishTime>01/29/2018 17:29:35</publishTime>
+    </File>
+    <File Include="Content/css/owl.carousel.css">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/css/owl.transitions.css">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/css/prettyPhoto.css">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/css/responsive.css">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.eot">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.svg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.ttf">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.woff">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/fontawesome-webfont.woff2">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/FontAwesome.otf">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/ionicons.eot">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/ionicons.svg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/ionicons.ttf">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/fonts/ionicons.woff">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/animated-number/bg.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/BitCoin.jpg">
+      <publishTime>01/28/2018 12:34:25</publishTime>
+    </File>
+    <File Include="Content/images/blog/01.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/blog/02.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/blog/03.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/cars_0002.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/cars_0005.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/cars_0010.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/cta2/cta2-bg.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/cta2/cta2-img.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/dubai.jpg">
+      <publishTime>11/05/2017 22:03:44</publishTime>
+    </File>
+    <File Include="Content/images/field-summer-sun-meadow 2.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/green.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/ico/apple-touch-icon-114-precomposed.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/ico/apple-touch-icon-144-precomposed.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/ico/apple-touch-icon-57-precomposed.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/ico/apple-touch-icon-72-precomposed.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/ico/favicon.ico">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/ico/Thumbs.db">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/logo.png">
+      <publishTime>11/05/2017 21:07:27</publishTime>
+    </File>
+    <File Include="Content/images/main-feature.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/mapbg.png">
+      <publishTime>11/05/2017 21:37:55</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/01.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/02.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/03.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/04.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/05.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/06.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/07.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/08.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/full.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/dark_rounded/btnNext.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/dark_rounded/btnPrevious.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/dark_rounded/contentPattern.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/dark_rounded/default_thumbnail.gif">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/dark_rounded/loader.gif">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/dark_rounded/sprite.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/dark_square/btnNext.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/dark_square/btnPrevious.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/dark_square/contentPattern.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/dark_square/default_thumbnail.gif">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/dark_square/loader.gif">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/dark_square/sprite.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/default/default_thumb.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/default/loader.gif">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/default/sprite.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/default/sprite_next.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/default/sprite_prev.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/default/sprite_x.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/default/sprite_y.png">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/facebook/btnNext.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/facebook/btnPrevious.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/facebook/contentPatternBottom.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/facebook/contentPatternLeft.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/facebook/contentPatternRight.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/facebook/contentPatternTop.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/facebook/default_thumbnail.gif">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/facebook/loader.gif">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/facebook/sprite.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/light_rounded/btnNext.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/light_rounded/btnPrevious.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/light_rounded/default_thumbnail.gif">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/light_rounded/loader.gif">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/light_rounded/sprite.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/light_square/btnNext.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/light_square/btnPrevious.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/light_square/default_thumbnail.gif">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/light_square/loader.gif">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/prettyPhoto/light_square/sprite.png">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/red.jpg">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/site-background.jpg">
+      <publishTime>11/05/2017 21:59:45</publishTime>
+    </File>
+    <File Include="Content/images/slider/bg1.jpg">
+      <publishTime>11/05/2017 20:41:56</publishTime>
+    </File>
+    <File Include="Content/images/slider/bg2.jpg">
+      <publishTime>11/05/2017 20:39:48</publishTime>
+    </File>
+    <File Include="Content/images/slider/bg3.jpg">
+      <publishTime>11/05/2017 20:43:49</publishTime>
+    </File>
+    <File Include="Content/images/slider/Thumbs.db">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/team/01.jpg">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/team/02.jpg">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/team/03.jpg">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/team/04.jpg">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/testimonial/01.jpg">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/testimonial/bg.jpg">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/testimonial/Thumbs.db">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/images/Thumbs.db">
+      <publishTime>07/11/2017 13:21:01</publishTime>
+    </File>
+    <File Include="Content/images/work-process/bg.jpg">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Content/PrintStyle.css">
+      <publishTime>07/11/2017 13:20:58</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>09/24/2020 01:40:01</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>01/18/2018 12:37:11</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/18/2018 12:37:16</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/18/2018 12:37:16</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/18/2018 12:37:16</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/18/2018 12:37:15</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/18/2018 12:37:11</publishTime>
+    </File>
+    <File Include="Models/GlobalAssetsDB.dbml">
+      <publishTime>04/09/2018 12:14:17</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/18/2018 12:37:47</publishTime>
+    </File>
+    <File Include="Scripts/angular-animate.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/angular-route.min.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/angular.min.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/angular/app.js">
+      <publishTime>02/20/2018 04:15:02</publishTime>
+    </File>
+    <File Include="Scripts/angular/Controllers/BuyPackageController.js">
+      <publishTime>02/20/2018 04:27:01</publishTime>
+    </File>
+    <File Include="Scripts/angular/Controllers/ClassController.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/angular/Controllers/FinancialController.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/angular/Controllers/InviteFriendsController.js">
+      <publishTime>04/04/2018 18:45:51</publishTime>
+    </File>
+    <File Include="Scripts/angular/Controllers/LandingPageController.js">
+      <publishTime>02/04/2018 03:57:06</publishTime>
+    </File>
+    <File Include="Scripts/angular/Controllers/TeamController.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/angular/Controllers/TransactionController.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/angular/Controllers/UserController.js">
+      <publishTime>02/20/2018 03:10:56</publishTime>
+    </File>
+    <File Include="Scripts/angular/Controllers/ViewWithdrawalController.js">
+      <publishTime>02/20/2018 04:52:24</publishTime>
+    </File>
+    <File Include="Scripts/angular/Controllers/WithdrawalController.js">
+      <publishTime>02/20/2018 04:32:42</publishTime>
+    </File>
+    <File Include="Scripts/angular/Factories/GetFactory.js">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Scripts/angular/Factories/PostFactory.js">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/html5shiv.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>01/18/2018 12:37:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>01/18/2018 12:37:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>01/18/2018 12:37:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.min.map">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.1.1.slim.min.map">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.inview.min.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.isotope.min.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.prettyPhoto.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/main.js">
+      <publishTime>02/24/2018 14:38:00</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/mousescroll.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/owl.carousel.min.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/smoothscroll.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/UtilityMethods.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/wow.min.js">
+      <publishTime>07/11/2017 13:21:02</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>02/19/2018 08:51:12</publishTime>
+    </File>
+    <File Include="Uploads/BankProofs/0fc8ea42-a5cc-4907-b61f-d7c423bbd83e.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/BankProofs/1.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/BankProofs/279fa2c6-4b1c-4562-a027-e89b770d5a72.PNG">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/BankProofs/6297d096-19af-4fa3-befb-317d9cc13c32.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/BankProofs/69c8fb2b-f32d-46b6-9846-7a3484a27b12.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/BankProofs/7126962d-fcb0-4146-a5b6-788dcbfc6b18.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/BankProofs/780f7638-816a-42f4-a5b3-df7a5cad876c.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/BankProofs/a4794ff6-759e-4830-89f4-7dc5470fea96.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/1.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/1.png">
+      <publishTime>02/05/2018 04:58:36</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/10.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/11.jpg">
+      <publishTime>02/04/2018 03:21:37</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/12.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/13.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/17.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/18.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/19.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/2.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/2.png">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/20.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/21.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/22.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/23.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/24.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/25.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/26.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/27.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/28.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/29.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/3.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/30.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/31.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/4.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/5.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/6.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/7.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/8.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/9.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/default-user.jpg">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Uploads/ProfileImages/Thumbs.db">
+      <publishTime>07/11/2017 13:21:03</publishTime>
+    </File>
+    <File Include="Views/Account/ConfirmEmail.cshtml">
+      <publishTime>01/18/2018 12:37:30</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>01/18/2018 12:37:30</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>01/18/2018 12:37:30</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPassword.cshtml">
+      <publishTime>01/18/2018 12:37:30</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPasswordConfirmation.cshtml">
+      <publishTime>01/18/2018 12:37:30</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>01/18/2018 12:37:30</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPassword.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPasswordConfirmation.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/Account/SendCode.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/Account/VerifyCode.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>01/18/2018 12:37:30</publishTime>
+    </File>
+    <File Include="Views/BackEnd/AdminApprovedWithdrawals.cshtml">
+      <publishTime>02/19/2018 07:51:31</publishTime>
+    </File>
+    <File Include="Views/BackEnd/AdminCompletedDeposits.cshtml">
+      <publishTime>02/18/2018 20:29:27</publishTime>
+    </File>
+    <File Include="Views/BackEnd/AdminDeclinedDeposits.cshtml">
+      <publishTime>02/20/2018 04:13:22</publishTime>
+    </File>
+    <File Include="Views/BackEnd/AdminPendingDeposits.cshtml">
+      <publishTime>02/05/2018 05:04:58</publishTime>
+    </File>
+    <File Include="Views/BackEnd/AdminPendingWithdrawals.cshtml">
+      <publishTime>02/19/2018 07:52:18</publishTime>
+    </File>
+    <File Include="Views/BackEnd/AdminProcessingDeposits.cshtml">
+      <publishTime>02/05/2018 06:38:25</publishTime>
+    </File>
+    <File Include="Views/BackEnd/BuyPackage.cshtml">
+      <publishTime>02/28/2018 01:13:01</publishTime>
+    </File>
+    <File Include="Views/BackEnd/Dashboard.cshtml">
+      <publishTime>02/06/2018 03:23:16</publishTime>
+    </File>
+    <File Include="Views/BackEnd/DeclinedWithdrawals.cshtml">
+      <publishTime>02/19/2018 07:50:42</publishTime>
+    </File>
+    <File Include="Views/BackEnd/Deposits.cshtml">
+      <publishTime>02/04/2018 04:17:35</publishTime>
+    </File>
+    <File Include="Views/BackEnd/DepositsHistory.cshtml">
+      <publishTime>02/20/2018 04:09:49</publishTime>
+    </File>
+    <File Include="Views/BackEnd/Index.cshtml">
+      <publishTime>01/27/2018 18:26:20</publishTime>
+    </File>
+    <File Include="Views/BackEnd/InviteFriends.cshtml">
+      <publishTime>09/24/2020 03:06:52</publishTime>
+    </File>
+    <File Include="Views/BackEnd/MyFriendCircle.cshtml">
+      <publishTime>02/19/2018 10:14:58</publishTime>
+    </File>
+    <File Include="Views/BackEnd/Payouts.cshtml">
+      <publishTime>02/06/2018 01:30:49</publishTime>
+    </File>
+    <File Include="Views/BackEnd/ViewDeposit.cshtml">
+      <publishTime>02/20/2018 04:55:44</publishTime>
+    </File>
+    <File Include="Views/BackEnd/ViewWithdrawal.cshtml">
+      <publishTime>02/20/2018 04:55:20</publishTime>
+    </File>
+    <File Include="Views/BackEnd/Withdraw.cshtml">
+      <publishTime>02/24/2018 14:40:43</publishTime>
+    </File>
+    <File Include="Views/BackEnd/WithdrawalHistory.cshtml">
+      <publishTime>02/19/2018 06:12:56</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>01/18/2018 12:37:11</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>01/18/2018 12:37:11</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>02/24/2018 14:35:33</publishTime>
+    </File>
+    <File Include="Views/Manage/AddPhoneNumber.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/Manage/ChangePassword.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/Manage/Index.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/Manage/ManageLogins.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/Manage/SetPassword.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/Manage/VerifyPhoneNumber.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>01/18/2018 12:37:30</publishTime>
+    </File>
+    <File Include="Views/Shared/Lockout.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_AdminLTELayout.cshtml">
+      <publishTime>01/29/2021 18:27:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>01/18/2018 12:37:30</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>01/18/2018 12:37:31</publishTime>
+    </File>
+    <File Include="Views/User/CancelPasswordResetRequest.cshtml">
+      <publishTime>01/29/2021 18:27:31</publishTime>
+    </File>
+    <File Include="Views/User/Login.cshtml">
+      <publishTime>01/29/2021 18:27:31</publishTime>
+    </File>
+    <File Include="Views/User/MyProfile.cshtml">
+      <publishTime>02/20/2018 03:07:54</publishTime>
+    </File>
+    <File Include="Views/User/ResetPassword.cshtml">
+      <publishTime>01/29/2021 18:27:31</publishTime>
+    </File>
+    <File Include="Views/User/ResetPasswordEmailSent.cshtml">
+      <publishTime>01/29/2021 18:27:31</publishTime>
+    </File>
+    <File Include="Views/User/ResetPasswordViaEmail.cshtml">
+      <publishTime>01/29/2021 18:27:31</publishTime>
+    </File>
+    <File Include="Views/User/SignUp.cshtml">
+      <publishTime>01/29/2021 18:27:31</publishTime>
+    </File>
+    <File Include="Views/User/TestPage.cshtml">
+      <publishTime>04/04/2018 16:40:53</publishTime>
+    </File>
+    <File Include="Views/User/VerificationEmailSent.cshtml">
+      <publishTime>01/29/2021 18:27:27</publishTime>
+    </File>
+    <File Include="Views/User/VerifyEmail.cshtml">
+      <publishTime>01/29/2021 18:27:31</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>01/18/2018 12:37:11</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>01/18/2018 12:37:11</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/24/2020 00:50:49</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

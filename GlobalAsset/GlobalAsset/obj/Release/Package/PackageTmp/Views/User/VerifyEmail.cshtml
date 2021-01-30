@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sign Up - CryptoCapitalInvestment.com</title>
+    @Styles.Render("~/Content/Style")
+    @Styles.Render("~/Content/Style/Fonts")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    @Styles.Render("~/AdminLTE/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/AdminLTE")
+    @Styles.Render("~/Content/SiteCSS")
+</head>
+<body class="hold-transition register-page">
+    <div class="register-box1 register-box">
+        <div class="register-logo">
+            @*<a href="#"><b>Find</b>RICH</a>*@
+            <a href="https://www.cminingfarms.com/"><img src="~/Content/crypto/images/logo/logo.png" alt="CMiningFarms.com"></a>
+        </div>
+        <div class="register-box-body" style="width:720px">
+            <div class="row">
+                <div class="col-md-12">
+                    @if (ViewBag.IsError)
+                    {
+                        <div class="alert alert-danger alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <h4><i class="icon fa fa-ban"></i> Sign Up Failed!</h4>
+                            Something went wrong while verifing the email address. Please try regenerating verification email by signing in to your account.
+                        </div>
+                    }
+                    else
+                    {
+                        <h2>Hi! @(ViewBag.Name)</h2>
+                        <p class="lead">Your email have verified. Welcome to CryptInvestmentsTech.com. Please login using your credintials.</p>
+                    }
+                    <a href="../User/Login" class="text-center btn btn-warning btn-flat">Login</a>
+                </div>
+            </div>
+            
+        </div>
+        <!-- /.form-box -->
+    </div>
+    <!-- /.register-box -->
+    <!-- jQuery 2.2.3 -->
+    <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

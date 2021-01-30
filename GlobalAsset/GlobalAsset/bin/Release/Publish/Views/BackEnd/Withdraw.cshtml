@@ -1,0 +1,150 @@
+﻿@model GlobalAsset.Models.WithdrawViewModel
+@{
+    Layout = null;
+}
+
+<section class="content">
+    <h2>Withdraw</h2>
+    <br />
+    <div class="row">
+        <div class="col-md-3">
+            <div class="info-box">
+                <span class="info-box-icon bg-yellow-gradient"><i class="ion ion-ios-gear-outline"></i></span>
+
+                <div class="info-box-content">
+                    <span class="info-box-text">Total Earnings</span>
+                    <span class="info-box-number">$ {{totalEarnings.toFixed(2)}}</span>
+                    @*<span class="info-box-number">$ @(Model.TotalEarnings.ToString("0.00"))</span>*@
+                </div>
+                <!-- /.info-box-content -->
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="info-box">
+                <span class="info-box-icon bg-yellow-gradient"><i class="ion ion-ios-gear-outline"></i></span>
+
+                <div class="info-box-content">
+                    <span class="info-box-text">Successfull Withdrawals</span>
+                    <span class="info-box-number">$ {{successfullWithdraws.toFixed(2)}}</span>
+                </div>
+                <!-- /.info-box-content -->
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="info-box">
+                <span class="info-box-icon bg-yellow-gradient"><i class="ion ion-ios-gear-outline"></i></span>
+
+                <div class="info-box-content">
+                    <span class="info-box-text">Pending Withdrawals</span>
+                    <span class="info-box-number">$ {{pendingWithdraws.toFixed(2)}}</span>
+                </div>
+                <!-- /.info-box-content -->
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="info-box">
+                <span class="info-box-icon bg-yellow-gradient"><i class="ion ion-ios-gear-outline"></i></span>
+
+                <div class="info-box-content">
+                    <span class="info-box-text">Available Balance</span>
+                    <span class="info-box-number">$ {{availbleBalance.toFixed(2)}}</span>
+                </div>
+                <!-- /.info-box-content -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="box box-warning">
+                <form method="post" ng-submit="saveWithdrawal()">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Withdraw Details</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="txtWithdrawingAmount">Withdrawing Amount (With Cents Eg:100.00)</label>
+                                    <input type="text" class="form-control" id="txtWithdrawingAmount" placeholder="Enter the amount" ng-model="amount" required pattern="^[0-9]*\.[0-9][0-9]$">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="txtWithdrawMethod">Withdrawing Method</label>
+                                    <select class="form-control" ng-model="paymentMethod" required ng-change="getPaymentEmail()">
+                                        <option value="">-- Select Method --</option>
+                                        <option value="Neteller">Neteller</option>
+                                        <option value="Skrill">Skrill</option>
+                                        <option value="bitcoin">BitCoin</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="txtWithdrawingEmail">Withdrawing Email</label>
+                                    <input type="text" class="form-control" id="txtWithdrawingEmail" placeholder="Enter the email" ng-model="paymentEmail" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <small class="text-yellow">**Please note that all the withdrawals are subject to 5% service charge.</small>
+                            </div>
+                            
+                        </div>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-warning">
+                            <i class="fa fa-floppy-o"></i>
+                            &nbsp;Request Withdraw
+                        </button>
+                    </div><!-- box-footer -->
+                </form>
+                <div class="overlay" ng-if="showLoading">
+                    <i class="fa fa-refresh fa-spin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="box box-warning">
+                <form>
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Recent Withdraw Requests</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        
+                            <table class="table table-bordered table-striped" id="tblAddedItems" ng-if="recentWithdrawals.length > 0">
+                                <tr>
+                                    <th style="width: 10%">Withdraw ID</th>
+                                    <th>Requested Date</th>
+                                    <th>Amount</th>
+                                    <th>Withdraw Method</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tr ng-repeat="item in recentWithdrawals">
+                                    <td style="width: 10%">{{item.WithdrawID}}</td>
+                                    <td>{{item.RequestedDate}}</td>
+                                    <td>{{item.Amount.toFixed(2)}}</td>
+                                    <td>{{item.WithdrawMethod}}</td>
+                                    <td>{{item.Status}}</td>
+                                </tr>
+
+                            </table>
+
+                            <div class="row" ng-if="recentWithdrawals.length == 0">
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <i class="ion ion-stats-bars text-gray" style="font-size:110px"></i>
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                                <div class="clearfix"></div>
+                                <h4 class="text-gray text-center">Oops! Looks like you haven't made any withdrawals yet.</h4>
+                            </div>
+
+                    </div><!-- /.box-body -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>

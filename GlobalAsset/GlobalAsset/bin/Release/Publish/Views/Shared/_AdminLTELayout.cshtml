@@ -1,0 +1,155 @@
+@{
+    GlobalAsset.Models.User siteUser = new GlobalAsset.Models.User();
+    bool nouser = false;
+    string baseURL = HttpContext.Current.Request.Url.Authority;
+    if (Session[GlobalAsset.Models.UtilityFunctions.UserSession] != null)
+    {
+        siteUser = (GlobalAsset.Models.User)Session[GlobalAsset.Models.UtilityFunctions.UserSession];
+        nouser = false;
+    }
+    else
+    {
+        Response.Redirect("~/User/Login");
+        nouser = true;
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Manager | CMiningFarms.com</title>
+    <base href="https://@(baseURL)" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="~/Content/crypto/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://www.cminingfarms.com/wp-content/uploads/2020/09/cropped-cci-favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.cminingfarms.com/wp-content/uploads/2020/09/cropped-cci-favicon-192x192.png" sizes="192x192">
+
+    @*<base href="http://localhost:4960" />*@
+    @Styles.Render("~/Content/Style")
+    @Styles.Render("~/Content/Style/Fonts")
+    @Styles.Render("~/AdminLTE/css")
+    @Styles.Render("~/Content/SiteCSS")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/AdminLTE")
+    @Scripts.Render("~/bundles/angular")
+
+</head>
+<body class="skin-yellow sidebar-mini fixed" ng-app="app" ng-controller="LandingPageController">
+    <input type="hidden" value="@(!nouser ? siteUser.UserID : 0)" id="hdnUserID" />
+    <div class="wrapper">
+        <header class="main-header fixed">
+            <a href="https://www.cminingfarms.com/" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>C</b></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>Crypto</b> Capital</span>
+            </a>
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="javascript:return false;" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="javascript:return false;" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="~/Uploads/ProfileImages/@(!nouser ? siteUser.UserID.ToString() + siteUser.ProfileImage : "")?@(DateTime.Now.Ticks.ToString())" class="user-image" alt="User Image" onerror="this.onerror = null; this.src = baseUrl + '/Uploads/ProfileImages/default-user.jpg'">
+                                <span class="hidden-xs">@(!nouser ? siteUser.Name : "")</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <img src="~/Uploads/ProfileImages/@(!nouser ? siteUser.UserID.ToString() + siteUser.ProfileImage : "")?@(DateTime.Now.Ticks.ToString())" class="img-circle" alt="User Image" onerror="this.onerror = null; this.src = baseUrl + '/Uploads/ProfileImages/default-user.jpg'">
+                                    <p>
+                                        @(!nouser ? siteUser.Name : "Welcome")
+                                        <small>@(!nouser ? siteUser.UserName : "")</small>
+                                        @*<b>Your Points: <span ng-bind="Points"></span></b>*@
+                                    </p>
+                                    <p>
+                                        
+                                    </p>
+                                </li>
+                                <!-- Menu Body -->
+                                @*<li class="user-body">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Followers</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Sales</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Friends</a>
+                                    </div>
+                                </li>*@
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="Backend/index/#/MyProfile" class="btn btn-default btn-flat"><i class="fa fa-user"></i>&nbsp;Profile</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="javascript:return false" class="btn btn-default btn-flat" ng-click="SignOut()"><i class="fa fa-sign-out"></i>&nbsp;Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="~/Uploads/ProfileImages/@(!nouser ? siteUser.UserID.ToString() + siteUser.ProfileImage : "")?@(DateTime.Now.Ticks.ToString())" class="img-circle" alt="User Image" onerror="this.onerror = null; this.src = baseUrl+'/Uploads/ProfileImages/default-user.jpg'">
+                    </div>
+                    <div class="pull-left info">
+                        <p>@(!nouser ? siteUser.Name : "")</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="header">NAVIGATION</li>
+                    <li><a href="Backend/index/#/"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+                    <li><a href="Backend/index/#/MyProfile"><i class="fa fa-user"></i> <span>My Profile</span></a></li>
+                    <li><a href="Backend/index/#/Deposits"><i class="fa fa-dollar"></i> <span>Make Deposit</span></a></li>
+                    <li><a href="Backend/index/#/DepositsHistory"><i class="fa fa-list-ol"></i> <span>Deposits History</span></a></li>
+                    <li><a href="Backend/index/#/Payouts"><i class="fa fa-calculator"></i> <span>Payout History</span></a></li>
+                    <li><a href="Backend/index/#/Withdraw"><i class="fa fa-money"></i> <span>Withdraw</span></a></li>
+                    <li><a href="Backend/index/#/WithdrawalHistory"><i class="fa fa-signal"></i> <span>Withdrawals History</span></a></li>
+                    <li><a href="Backend/index/#/InviteFriends"><i class="fa fa-user-plus"></i> <span>Invite Friends</span></a></li>
+                    <li><a href="Backend/index/#/FriendCircle"><i class="fa fa-group"></i> <span>My Friend Circle</span></a></li>
+                    <li><a href="javascript:return false;" ng-click="SignOut()"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+                    @if (siteUser.UserType.Value == Convert.ToInt32(GlobalAsset.Models.UserTypes.Admin))
+                    {
+                        <li class="header">ADMIN FUNCTIONS</li>
+                        @*<li><a href="Backend/index/#/InviteFriends"><i class="fa fa-home"></i> <span>Users</span></a></li>*@
+                        <li><a href="Backend/index/#/AdminPendingDeposits"><i class="fa fa-tasks"></i> <span>Pending Deposits</span></a></li>
+                        <li><a href="Backend/index/#/AdminProcessingDeposits"><i class="fa fa-suitcase"></i> <span>Progressing Deposits</span></a></li>
+                        <li><a href="Backend/index/#/AdminCompletedDeposits"><i class="fa fa-coffee"></i> <span>Completed Deposits</span></a></li>
+                        <li><a href="Backend/index/#/AdminDeclinedDeposits"><i class="fa fa-life-ring"></i> <span>Declined Deposits</span></a></li>
+                        <li><a href="Backend/index/#/PendingWithdrawals"><i class="fa fa-exclamation-circle"></i> <span>Pending Withdrawals</span></a></li>
+                        <li><a href="Backend/index/#/ApprovedWithdrawals"><i class="fa fa-paper-plane"></i> <span>Approved Withdrawals</span></a></li>
+                        <li><a href="Backend/index/#/DeclinedWithdrawals"><i class="fa fa-minus-circle"></i> <span>Declined Withdrawals</span></a></li>
+                    }
+                    
+                </ul>
+            </section>
+        </aside>
+        @RenderBody()
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 2.0.0
+            </div>
+            <strong>Copyright © 2017 <a href="https://www.cminingfarms.com/">CryptoCapitalInvestment.com</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

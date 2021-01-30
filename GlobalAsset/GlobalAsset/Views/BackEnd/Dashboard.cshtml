@@ -1,0 +1,164 @@
+﻿@model GlobalAsset.Models.DashBoardViewModel
+@{
+    Layout = null;
+}
+
+<section class="content">
+    <h2>Dashboard</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Widget: user widget style 1 -->
+            <div class="box box-widget widget-user">
+                <!-- Add the bg color to the header using any of the bg-* classes -->
+                <div class="widget-user-header bg-yellow-gradient">
+                    <h3 class="widget-user-username">Hi, @(Model.Name)</h3>
+                    <h4 class="widget-user-desc">@(Model.Email)</h4>
+                </div>
+                <div class="widget-user-image">
+                    <img src="~/Uploads/ProfileImages/@(Model.UserID.ToString() + Model.ImageExt)?@(DateTime.Now.Ticks.ToString())" class="img-circle" alt="User Image" onerror="this.onerror = null; this.src = baseUrl+'/Uploads/ProfileImages/default-user.jpg'">
+                </div>
+                <div class="box-footer">
+                    <div class="row">
+                        <div class="col-sm-3 border-right">
+                            <div class="description-block">
+                                <h5 class="description-header">$@(Model.AccountBalance.ToString("0.00"))</h5>
+                                <span class="description-text">Total Earnings</span>
+                            </div>
+                            <!-- /.description-block -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-3 border-right">
+                            <div class="description-block">
+                                <h5 class="description-header">$@(Model.PendingWithdrawals.ToString("0.00"))</h5>
+                                <span class="description-text">Pending Withdrawals</span>
+                            </div>
+                            <!-- /.description-block -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-3">
+                            <div class="description-block">
+                                <h5 class="description-header">$@(Model.SuccessfullWithdrawals.ToString("0.00"))</h5>
+                                <span class="description-text">Approved Withdrawals</span>
+                            </div>
+                            <!-- /.description-block -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-3">
+                            <div class="description-block">
+                                <h5 class="description-header">$@(Model.AvailableBalance.ToString("0.00"))</h5>
+                                <span class="description-text">Available Balance</span>
+                            </div>
+                            <!-- /.description-block -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+            <!-- /.widget-user -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box box-warning">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Recent Deposits</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                    @if (Model.RecentDeposits.Count > 0)
+                    {
+                        <table class="table table-bordered table-striped text-center" id="tblAddedItems">
+                            <tr>
+                                <th>Deposit# </th>
+                                <th>Package Name</th>
+                                <th>Amount</th>
+                                <th>Purchased On</th>
+                                <th>Duration (Days)</th>
+                                <th></th>
+                            </tr>
+                            @foreach (var item in Model.RecentDeposits)
+                            {
+                                <tr>
+                                    <td style="width: 10%">@(item.DepositID)</td>
+                                    <td>@(item.PackageName)</td>
+                                    <td>$@(item.Amount)</td>
+                                    <td>@(item.PurchasedOn)</td>
+                                    <td>@(item.Duration)</td>
+                                    <td><a class="btn btn-warning btn-xs btn-block btn-flat" href="Backend/index/#/ViewDeposit/@(item.DepositID)">View</a></td>
+                                </tr>
+                            }
+
+                        </table>
+                    }
+                    else
+                    {
+                        <div class="row">
+                            <div class="col-md-5">
+                            </div>
+                            <div class="col-md-2">
+                                <i class="ion ion-stats-bars text-gray" style="font-size:110px"></i>
+                            </div>
+                            <div class="col-md-5">
+                            </div>
+                            <div class="clearfix"></div>
+                            <h4 class="text-gray text-center">Oops! Looks like you haven't made any deposits yet.</h4>
+                        </div>
+                    }
+                </div><!-- /.box-body -->
+                <div class="box-footer">
+
+                </div><!-- box-footer -->
+            </div><!-- /.box -->
+        </div>
+        <div class="col-md-6">
+            <div class="box box-warning">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Recent Withdrawals</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                    @if (Model.RecentWithdrawals.Count > 0)
+                    {
+                        <table class="table table-bordered table-striped" id="tblAddedItems">
+                            <tr>
+                                <th style="width: 10%">Withdraw ID</th>
+                                <th>Requested Date</th>
+                                <th>Amount</th>
+                                <th>Withdraw Method</th>
+                                <th>Status</th>
+                            </tr>
+                            @foreach (var item in Model.RecentWithdrawals)
+                            {
+                                <tr>
+                                    <td style="width: 10%">@(item.WithdrawID)</td>
+                                    <td>@(item.RequestedDate)</td>
+                                    <td>@(item.Amount.ToString("0.00"))</td>
+                                    <td>@(item.WithdrawMethod)</td>
+                                    <td>@(item.Status)</td>
+                                </tr>
+                            }
+
+                        </table>
+                    }
+                    else
+                    {
+                        <div class="row">
+                            <div class="col-md-5">
+                            </div>
+                            <div class="col-md-2">
+                                <i class="ion ion-stats-bars text-gray" style="font-size:110px"></i>
+                            </div>
+                            <div class="col-md-5">
+                            </div>
+                            <div class="clearfix"></div>
+                            <h4 class="text-gray text-center">Oops! Looks like you haven't made any withdrawals yet.</h4>
+                        </div>
+                    }
+                    
+                </div><!-- /.box-body -->
+                <div class="box-footer">
+
+                </div><!-- box-footer -->
+            </div>
+        </div>
+    </div>
+</section>

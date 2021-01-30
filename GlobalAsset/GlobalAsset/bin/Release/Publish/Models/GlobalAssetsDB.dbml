@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GlobalAssets" Class="GlobalAssetsDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=HESHITHALAP;Initial Catalog=GlobalAssets;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="GlobalAssetsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="NetellerAccountEmail" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="SkrillAccountEmail" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="BitCoinWalletAddress" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="ProfileImage" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="UserType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RefferedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SignedUpDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsMailVerified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="User_Payout" Member="Payouts" ThisKey="UserID" OtherKey="UserID" Type="Payout" />
+      <Association Name="User_Withdrawal" Member="Withdrawals" ThisKey="UserID" OtherKey="UserID" Type="Withdrawal" />
+      <Association Name="User_UserPackage" Member="UserPackages" ThisKey="UserID" OtherKey="UserID" Type="UserPackage" />
+      <Association Name="User_PasswordResetRequest" Member="PasswordResetRequests" ThisKey="UserID" OtherKey="RequestedUserID" Type="PasswordResetRequest" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Packages" Member="Packages">
+    <Type Name="Package">
+      <Column Name="PackageID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Investment" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Interest" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Duration" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PackageColor" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="PackageLogo" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="PerDayPackage" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PerDayAmount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="InvestmentText" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SubHeading" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MinInvestment" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaxInvestment" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Package_UserPackage" Member="UserPackages" ThisKey="PackageID" OtherKey="PackageID" Type="UserPackage" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Payouts" Member="Payouts">
+    <Type Name="Payout">
+      <Column Name="PayoutID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserPackageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ActivatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="User_Payout" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" />
+      <Association Name="UserPackage_Payout" Member="UserPackage" ThisKey="UserPackageID" OtherKey="UserPackageID" Type="UserPackage" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Withdrawals" Member="Withdrawals">
+    <Type Name="Withdrawal">
+      <Column Name="WithdrawalID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RequestedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ApprovedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ApprovedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PaymentType" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RecipientEmail" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="TransactionID" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="SendersEmail" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="ReasonForDecline" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Association Name="User_Withdrawal" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserPackages" Member="UserPackages">
+    <Type Name="UserPackage">
+      <Column Name="UserPackageID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PackageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RequestedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AcknowledgedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PaymentType" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TransactionID" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="SendersEmail" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="RecipientEmail" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="AcknowledgeBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeclineReason" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Association Name="UserPackage_Payout" Member="Payouts" ThisKey="UserPackageID" OtherKey="UserPackageID" Type="Payout" />
+      <Association Name="Package_UserPackage" Member="Package" ThisKey="PackageID" OtherKey="PackageID" Type="Package" IsForeignKey="true" />
+      <Association Name="User_UserPackage" Member="User" ThisKey="UserID" OtherKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PasswordResetRequest" Member="PasswordResetRequests">
+    <Type Name="PasswordResetRequest">
+      <Column Name="RequestID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RequestedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AcknowledgeDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RequestStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RequestedUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="User_PasswordResetRequest" Member="User" ThisKey="RequestedUserID" OtherKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

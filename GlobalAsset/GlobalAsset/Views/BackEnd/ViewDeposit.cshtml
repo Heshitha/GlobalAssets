@@ -1,0 +1,231 @@
+﻿@model GlobalAsset.Models.ViewDepositViewModel
+@{
+    Layout = null;
+    string progColor = "";
+    if (Model.StatusText == "Pending Approval")
+    {
+        progColor = "aqua";
+    }
+    else if (Model.StatusText == "Progressing")
+    {
+        progColor = "yellow";
+    }
+    else if (Model.StatusText == "Declined")
+    {
+        progColor = "red";
+    }
+    else
+    {
+        progColor = "green";
+    }
+    GlobalAsset.Models.User sesUser = (GlobalAsset.Models.User)Session[GlobalAsset.Models.UtilityFunctions.UserSession];
+
+}
+
+<section class="content">
+    <h2>View Deposit</h2>
+    @if (Model.IsAuthoried)
+    {
+        <div class="row">
+            <input type="hidden" id="hdnUPID" value="@(Model.UserPackID)" />
+            <div class="col-md-12">
+                <div class="box box-warning">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Deposit Progress</h3>
+                        <div class="pull-right">
+                            @if (Model.StatusText == "Pending Approval")
+                            {
+                                <span class="text-aqua">Pending Approval&nbsp;&nbsp;&nbsp;<span class="badge bg-aqua">0%</span></span>
+                            }
+                            else if (Model.StatusText == "Progressing")
+                            {
+                                <span class="text-yellow">Progressing&nbsp;&nbsp;&nbsp;<span class="badge bg-yellow">@(Model.Progress)%</span></span>
+                            }
+                            else if (Model.StatusText == "Declined")
+                            {
+                                <span class="text-red">Declined&nbsp;&nbsp;&nbsp;<span class="badge bg-red">0%</span></span>
+                            }
+                            else
+                            {
+                                <span class="text-green">Completed&nbsp;&nbsp;&nbsp;<span class="badge bg-green">100%</span></span>
+                            }
+                        </div>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+
+                        <div class="progress active">
+                            <div class="progress-bar progress-bar-@(progColor) progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: @(Model.Progress)%">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <!-- Widget: user widget style 1 -->
+                <div class="box box-widget widget-user-2">
+                    <!-- Add the bg color to the header using any of the bg-* classes -->
+                    <div class="widget-user-header bg-@(Model.PackColor)">
+                        <div class="widget-user-image">
+                            <img class="img-circle" src="../Uploads/ProfileImages/default-user.jpg" alt="User Avatar">
+                        </div>
+                        <!-- /.widget-user-image -->
+                        <h3 class="widget-user-username">@(Model.PackName)</h3>
+                        <h5 class="widget-user-desc">@(Model.SubHeading)</h5>
+
+                    </div>
+                    <div class="box-body">
+
+
+                        <ul class="nav nav-stacked">
+                            <li><a href="javascript:return false;">Investment <span class="pull-right badge bg-blue">@(Model.InvestmentText)</span></a></li>
+                            <li><a href="javascript:return false;">Interest <span class="pull-right badge bg-aqua">@(Model.Interest)%</span></a></li>
+                            <li><a href="javascript:return false;">Duration <span class="pull-right badge bg-green">@(Model.Duration) Days</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.widget-user -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="box box-warning">
+                    <form ng-submit="DeclinePackage()">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Deposit Details</h3>
+                        </div><!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row">
+                                @if (sesUser.UserType == Convert.ToInt32(GlobalAsset.Models.UserTypes.Admin))
+                                {
+                                    <div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label for="txtName">Name</label>
+                                                <input type="text" class="form-control" required value="@(Model.Name)" disabled>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="txtName">Username</label>
+                                                <input type="text" class="form-control" required value="@(Model.UserName)" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <img id="imgPreview" class="profile-user-img img-responsive profile-user-img-profilePage" src="~/Uploads/ProfileImages/@(Model.UserID.ToString() + Model.ProfileImage)?@(DateTime.Now.Ticks.ToString())" alt="Uploaded Image" hidden onerror="this.onerror = null; this.src = baseUrl + '/Uploads/ProfileImages/default-user.jpg'" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="txtDepositAmount">Deposited Amount</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
+                                            <input type="text" class="form-control" id="txtDepositAmount" placeholder="Enter deposited amount" required disabled value="@(Model.DepositedAmount)">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtDepositDate">Deposited Date</label>
+                                        <input type="text" class="form-control" id="txtDepositDate" placeholder="Enter deposited date" required disabled value="@(Model.DepositedDate)">
+                                    </div>
+                                    @if (!string.IsNullOrEmpty(Model.ApprovedDate))
+                                    {
+                                        <div class="form-group">
+                                            <label for="txtApprovedDate">Processed Date</label>
+                                            <input type="text" class="form-control" id="txtApprovedDate" placeholder="Enter approved date" required disabled value="@(Model.ApprovedDate)">
+                                        </div>
+                                    }
+                                    @if (!string.IsNullOrEmpty(Model.ExpiredDate))
+                                    {
+                                        <div class="form-group">
+                                            <label for="txtExpiredDate">Expired Date</label>
+                                            <input type="text" class="form-control" id="txtExpiredDate" placeholder="Enter expired date" required disabled value="@(Model.ExpiredDate)">
+                                        </div>
+                                    }
+                                    <div class="form-group">
+                                        <label for="txtPaymentMethod">Payment Method</label>
+                                        <input type="text" class="form-control" id="txtPaymentMethod" placeholder="Enter payment method" required disabled value="@(Model.PaymentMethod)">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtTransactionID">Transaction ID</label>
+                                        <input type="text" class="form-control" id="txtTransactionID" placeholder="Enter transaction id" required disabled value="@(Model.TransactionID)">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtTransactionEmail">Email Used For Transaction</label>
+                                        <input type="text" class="form-control" id="txtTransactionEmail" placeholder="Enter transaction email" required disabled value="@(Model.TransactionEmail)">
+                                    </div>
+                                    <input type="hidden" id="hdnReason" value="@(Model.ReasonForDecline)" />
+                                    @if ((sesUser.UserType == Convert.ToInt32(GlobalAsset.Models.UserTypes.Admin) && Model.StatusText == "Pending Approval") || Model.StatusText == "Declined")
+                                    {
+                                        <div class="form-group">
+                                            <label for="txtReasonForDecline">Declined Reason</label>
+                                            <input type="text" class="form-control" id="txtReasonForDecline" placeholder="Declining Reason" value="@(Model.ReasonForDecline)" required @(Model.StatusText == "Declined" ? "disabled" : "") >
+                                        </div>
+                                    }
+
+                                </div>
+                            </div>
+                        </div><!-- /.box-body -->
+                        <div class="box-footer">
+                            @if (sesUser.UserType == Convert.ToInt32(GlobalAsset.Models.UserTypes.Admin) && Model.StatusText == "Pending Approval")
+                            {
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn bg-yellow" ng-click="ApprovePackage()">
+                                            Approve Deposit
+                                        </button>
+                                        <button type="submit" class="btn btn-danger">
+                                            Decline Deposit
+                                        </button>
+                                    </div>
+                                </div>
+                            }
+                            @*<button type="submit" class="btn btn-warning">
+                                    <i class="fa fa-floppy-o"></i>
+                                    &nbsp;Save Details
+                                </button>*@
+                        </div><!-- box-footer -->
+                    </form>
+                    <div class="overlay" ng-if="showLoading">
+                        <i class="fa fa-refresh fa-spin"></i>
+                    </div>
+                </div><!-- /.box -->
+            </div>
+        </div>
+
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="box box-warning">
+                    <div class="box-header with-border">
+                    </div><!-- /.box-header -->
+                    <div class="box-body text-center">
+                        <div class="row">
+                            <div class="col-md-5">
+                            </div>
+                            <div class="col-md-2">
+                                <i class="fa fa-refresh fa-spin text-gray" style="font-size:110px"></i>
+                            </div>
+                            <div class="col-md-5">
+                            </div>
+                            <div class="clearfix"></div>
+                            <h2 class="text-gray">Oops! Looks like you are not authorized to view this deposit.</h2>
+                        </div>
+                        <div class="row">
+
+                        </div>
+
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+
+                    </div><!-- box-footer -->
+                </div><!-- /.box -->
+            </div>
+        </div>
+    }
+
+
+</section>

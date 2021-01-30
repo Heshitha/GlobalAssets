@@ -1,0 +1,92 @@
+﻿@model GlobalAsset.Models.WithdrawHistoryViewModel
+@{
+    Layout = null;
+}
+
+<section class="content">
+    <h2>Approved Withdrawals</h2>
+
+    @if (Model.ApprovedWithdrawals.Count > 0)
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="box box-warning">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Approved Withdrawals</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <table class="table table-bordered table-striped" id="tblAddedItems">
+                            <tr>
+                                <th style="width: 10%">Withdraw ID</th>
+                                <th>Requested Date</th>
+                                <th>Amount</th>
+                                <th>Withdraw Method</th>
+                                <th>Status</th>
+                                <th>Proccessed Date</th>
+                                <th></th>
+                            </tr>
+                            @foreach (var item in Model.ApprovedWithdrawals)
+                            {
+                                <tr>
+                                    <td style="width: 10%">@(item.WithdrawID)</td>
+                                    <td>@(item.RequestedDate)</td>
+                                    <td>@(item.Amount.ToString("0.00"))</td>
+                                    <td>@(item.WithdrawMethod)</td>
+                                    <td>@(item.Status)</td>
+                                    <td>@(item.ProcessedDate)</td>
+                                    <td>
+                                        <a class="btn btn-warning btn-xs btn-block btn-flat" href="Backend/index/#/ViewWithdraw/@(item.WithdrawID)">View</a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </table>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+
+                    </div><!-- box-footer -->
+                </div><!-- /.box -->
+            </div>
+        </div>
+    }
+
+
+
+    @if (Model.ApprovedWithdrawals.Count == 0)
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="box box-warning">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Withdrawals</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-5">
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <i class="ion ion-stats-bars text-gray" style="font-size:110px"></i>
+                            </div>
+                            <div class="col-md-5">
+                            </div>
+                            <div class="clearfix"></div>
+                            <h4 class="text-gray text-center">Oops! Looks like there are no approved withdrawals.</h4>
+                        </div>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+
+                    </div><!-- box-footer -->
+                </div><!-- /.box -->
+            </div>
+        </div>
+    }
+
+
+
+
+
+
+
+
+</section>
+

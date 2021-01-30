@@ -1,0 +1,214 @@
+﻿@model GlobalAsset.Models.DepositsHistoryViewModel
+@{
+    Layout = null;
+}
+
+<section class="content">
+    <h2>Deposits History</h2>
+    @if (Model.PendingList.Count > 0)
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="box box-warning">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Pending On Approval</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <th style="width: 10%">Deposit ID</th>
+                                <th>Package Name</th>
+                                <th>Amount</th>
+                                <th>Purchased On</th>
+                                <th>Duration (Days)</th>
+                                <th></th>
+                            </tr>
+                            @foreach(var item in Model.PendingList)
+                            {
+                                <tr>
+                                    <td style="width: 10%">@(item.DepositID)</td>
+                                    <td>@(item.PackageName)</td>
+                                    <td>$@(item.Amount)</td>
+                                    <td>@(item.PurchasedOn)</td>
+                                    <td>@(item.Duration)</td>
+                                    <td>
+                                        <a class="btn btn-default bg-aqua btn-xs btn-block btn-flat" href="Backend/index/#/ViewDeposit/@(item.DepositID)">View</a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </table>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+
+                    </div><!-- box-footer -->
+                </div><!-- /.box -->
+            </div>
+        </div>
+    }
+    
+    @if (Model.ProgressingList.Count > 0)
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="box box-warning">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">On Going Deposits</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <th style="width: 10%">Deposit ID</th>
+                                <th>Package Name</th>
+                                <th>Amount</th>
+                                <th>Purchased On</th>
+                                <th>Approved On</th>
+                                <th>Duration (Days)</th>
+                                <th></th>
+                            </tr>
+                            @foreach (var item in Model.ProgressingList)
+                            {
+                                <tr>
+                                    <td style="width: 10%">@(item.DepositID)</td>
+                                    <td>@(item.PackageName)</td>
+                                    <td>$@(item.Amount)</td>
+                                    <td>@(item.PurchasedOn)</td>
+                                    <td>@(item.ApprovedOn)</td>
+                                    <td>@(item.Duration)</td>
+                                    <td>
+                                        <a class="btn btn-warning btn-xs btn-block btn-flat" href="Backend/index/#/ViewDeposit/@(item.DepositID)">View</a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </table>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+
+                    </div><!-- box-footer -->
+                </div><!-- /.box -->
+            </div>
+        </div>
+    }
+
+    @if (Model.ExpiredList.Count > 0)
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="box box-warning">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Completed Deposits</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <th style="width: 10%">Deposit ID</th>
+                                <th>Package Name</th>
+                                <th>Amount</th>
+                                <th>Purchased On</th>
+                                <th>Expired On</th>
+                                <th>Duration (Days)</th>
+                                <th></th>
+                            </tr>
+                            @foreach (var item in Model.ExpiredList)
+                            {
+                                <tr>
+                                    <td style="width: 10%">@(item.DepositID)</td>
+                                    <td>@(item.PackageName)</td>
+                                    <td>$@(item.Amount)</td>
+                                    <td>@(item.PurchasedOn)</td>
+                                    <td>@(item.ExpiredOn)</td>
+                                    <td>@(item.Duration)</td>
+                                    <td>
+                                        <a class="btn btn-success btn-xs btn-block btn-flat" href="Backend/index/#/ViewDeposit/@(item.DepositID)">View</a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </table>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+
+                    </div><!-- box-footer -->
+                </div><!-- /.box -->
+            </div>
+        </div>
+    }
+
+    @if (Model.DeclinedList.Count > 0)
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="box box-warning">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Declined Deposits</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <th style="width: 10%">Deposit ID</th>
+                                <th>Package Name</th>
+                                <th>Amount</th>
+                                <th>Purchased On</th>
+                                <th>Processed On</th>
+                                <th>Duration (Days)</th>
+                                <th></th>
+                            </tr>
+                            @foreach (var item in Model.DeclinedList)
+                            {
+                                <tr>
+                                    <td style="width: 10%">@(item.DepositID)</td>
+                                    <td>@(item.PackageName)</td>
+                                    <td>$@(item.Amount)</td>
+                                    <td>@(item.PurchasedOn)</td>
+                                    <td>@(item.ApprovedOn)</td>
+                                    <td>@(item.Duration)</td>
+                                    <td>
+                                        <a class="btn btn-danger btn-xs btn-block btn-flat" href="Backend/index/#/ViewDeposit/@(item.DepositID)">View</a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </table>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+
+                    </div><!-- box-footer -->
+                </div><!-- /.box -->
+            </div>
+        </div>
+    }
+    
+    @if (Model.PendingList.Count == 0 && Model.ProgressingList.Count == 0 && Model.ExpiredList.Count == 0 && Model.DeclinedList.Count == 0)
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="box box-warning">
+                    <div class="box-header with-border">
+                    </div><!-- /.box-header -->
+                    <div class="box-body text-center">
+                        <div class="row">
+                            <div class="col-md-5">
+                            </div>
+                            <div class="col-md-2">
+                                <i class="ion ion-stats-bars text-gray" style="font-size:110px"></i>
+                            </div>
+                            <div class="col-md-5">
+                            </div>
+                            <div class="clearfix"></div>
+                            <h4 class="text-gray">Oops! Looks like you haven't made any deposits yet.</h4>
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                        
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+
+                    </div><!-- box-footer -->
+                </div><!-- /.box -->
+            </div>
+        </div>
+    }
+
+</section>

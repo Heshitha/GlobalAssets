@@ -1,0 +1,106 @@
+﻿
+@{
+    Layout = null;
+
+    GlobalAsset.Models.User siteUser = (GlobalAsset.Models.User)Session[GlobalAsset.Models.UtilityFunctions.UserSession];
+    string url = HttpContext.Current.Request.Url.Authority;
+    string sharingUrl = "https://" + HttpContext.Current.Request.Url.Authority + "/User/SignUp?referral=" + GlobalAsset.Models.UtilityFunctions.Encryptdata(siteUser.UserName);
+}
+
+<section class="content">
+    <h2>Invite Your Friends</h2>
+    <input type="hidden" id="hdnSharingUrl" value="@(sharingUrl)" />
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="box box-warning">
+                <form>
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Sharing Link</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="txtDirectLink">Direct Link</label>
+                                    <input type="text" class="form-control" id="txtSharingUrl" placeholder="Enter direct link" readonly ng-model="sharingUrl">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+                        <button type="button" class="btn btn-warning" ng-click="copyURL()">
+                            <i class="fa fa-floppy-o"></i>
+                            &nbsp;Copy Link
+                        </button>
+                    </div><!-- box-footer -->
+                </form>
+            </div><!-- /.box -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="box box-warning">
+                <form ng-submit="sendInvitations()">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Share Link Via Email</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="txtEmailAddresses">Email Addresses</label>
+                                    <input type="text" class="form-control" id="txtEmailAddresses" placeholder="Enter email addresses" ng-model="friendsemails" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="text-muted">*You can enter multiple email addresses seperated with ','</p>
+                            </div>
+                        </div>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-warning">
+                            <i class="fa fa-floppy-o"></i>
+                            &nbsp;Send Emails
+                        </button>
+                    </div><!-- box-footer -->
+                </form>
+            </div><!-- /.box -->
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="box box-warning">
+                <form ng-submit="changePassword()">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Share Link Via Social Media</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a class="btn btn-block btn-social btn-facebook btn-lg">
+                                    <i class="fa fa-facebook"></i> Share it with Facebook
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="btn btn-block btn-social btn-twitter btn-lg">
+                                    <i class="fa fa-twitter"></i> Share it with Twitter
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a class="btn btn-block btn-social btn-google btn-lg">
+                                    <i class="fa fa-google-plus"></i> Share it with Google Plus
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+                        
+                    </div><!-- box-footer -->
+                </form>
+            </div><!-- /.box -->
+        </div>
+    </div>
+
+</section>
